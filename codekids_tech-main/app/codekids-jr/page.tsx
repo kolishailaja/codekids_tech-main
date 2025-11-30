@@ -9,7 +9,9 @@ import {
   Code, Brain, Zap, Cpu, ChevronLeft, ChevronRight, CheckCircle, Award,
   Calendar, Target, PlayCircle, ArrowRight, TrendingUp, Shield, Heart, Clock,
   Building2, GraduationCap, MessageSquare, Globe, Network,
-  Smartphone, Database, Gamepad2, Lock, Settings
+  Smartphone, Database, Gamepad2, Lock, Settings, FileText, Video, 
+  BarChart3, Presentation, FileVideo, Eye, BarChart, ArrowRightCircle,
+  Layers, School, Handshake, UserCheck, Megaphone
 } from 'lucide-react';
 import { GlassCard } from '@/components/ui/glass-card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -19,22 +21,17 @@ const heroCarousel = [
   {
     title: 'Robotics & Automation',
     description: 'Build and program robots using Arduino and sensors',
-    image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '/assest/kids robotics.jpg',
   },
   {
     title: 'Coding & Programming',
     description: 'Learn Python, Scratch, and game development',
-    image: 'https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1920',
-  },
-  {
-    title: 'Drone Technology',
-    description: 'Program and fly drones with obstacle courses',
-    image: 'https://images.pexels.com/photos/8613317/pexels-photo-8613317.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '/assest/coding.jpg',
   },
   {
     title: 'AI & Machine Learning',
     description: 'Explore artificial intelligence and machine learning',
-    image: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '/assest/ai.jpg',
   },
 ];
 
@@ -50,7 +47,7 @@ const camps = [
     title: 'Robotics Camp',
     description: 'Build and program robots using Arduino and sensors. Learn electronics, programming, and mechanical design.',
     duration: '2 weeks',
-    image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/kids robotics.jpg',
     ageGroup: 'Ages 8-17',
     skills: ['Arduino', 'Electronics', 'Programming', 'Mechanical Design'],
   },
@@ -58,7 +55,7 @@ const camps = [
     title: 'Coding Camp',
     description: 'Learn Python, Scratch, and game development. Create your first games and applications.',
     duration: '2 weeks',
-    image: 'https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/coding.jpg',
     ageGroup: 'Ages 6-16',
     skills: ['Python', 'Scratch', 'Game Development', 'Logic'],
   },
@@ -66,7 +63,7 @@ const camps = [
     title: 'Drone Tech Camp',
     description: 'Program and fly drones with obstacle courses. Learn aerial photography and navigation.',
     duration: '1 week',
-    image: 'https://images.pexels.com/photos/8613317/pexels-photo-8613317.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/drone.jpg',
     ageGroup: 'Ages 10-17',
     skills: ['Drone Programming', 'Aerial Photography', 'Navigation', 'Safety'],
   },
@@ -74,7 +71,7 @@ const camps = [
     title: 'AI & ML Camp',
     description: 'Explore artificial intelligence and machine learning through hands-on projects.',
     duration: '2 weeks',
-    image: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/ai.jpg',
     ageGroup: 'Ages 12-17',
     skills: ['Python', 'Machine Learning', 'Data Science', 'AI Concepts'],
   },
@@ -83,22 +80,22 @@ const camps = [
 const clubs = [
   { name: 'Robotics Club', icon: Rocket, color: 'from-pink-400 to-pink-600', 
     description: 'Weekly sessions on robotics, automation, and mechatronics',
-    image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800' },
+    image: '/assest/kids robotics.jpg' },
   { name: 'Coding Club', icon: Code, color: 'from-purple-400 to-purple-600',
     description: 'Learn programming languages and build projects together',
-    image: 'https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800' },
+    image: '/assest/coding.jpg' },
   { name: 'AI & ML Club', icon: Brain, color: 'from-blue-400 to-blue-600',
     description: 'Explore artificial intelligence and machine learning concepts',
-    image: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=800' },
+    image: '/assest/ai.jpg' },
   { name: 'Drone Club', icon: Zap, color: 'from-cyan-400 to-cyan-600',
     description: 'Master drone programming and aerial robotics',
-    image: 'https://images.pexels.com/photos/8613317/pexels-photo-8613317.jpeg?auto=compress&cs=tinysrgb&w=800' },
+    image: '/assest/drone.jpg' },
   { name: 'Maker Club', icon: Lightbulb, color: 'from-orange-400 to-orange-600',
     description: '3D printing, IoT projects, and innovation workshops',
-    image: 'https://images.pexels.com/photos/8438983/pexels-photo-8438983.jpeg?auto=compress&cs=tinysrgb&w=800' },
+    image: '/assest/codekids jr projects.jpg' },
   { name: '3D Printing Club', icon: Cpu, color: 'from-green-400 to-green-600',
     description: 'Design and print 3D models and prototypes',
-    image: 'https://images.pexels.com/photos/5905717/pexels-photo-5905717.jpeg?auto=compress&cs=tinysrgb&w=800' },
+    image: '/assest/learning.jpg' },
 ];
 
 const testimonials = [
@@ -108,7 +105,7 @@ const testimonials = [
     school: 'Delhi Public School',
     text: 'The robotics camp changed my perspective on technology. I built my first robot and now I want to become a robotics engineer!',
     rating: 5,
-    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian student
+    image: '/assest/students.jpg',
   },
   {
     name: 'Priya Patel',
@@ -116,7 +113,7 @@ const testimonials = [
     school: 'Ryan International School',
     text: 'Learning AI and coding through CodeKids has been amazing. The teachers are patient and make everything fun.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian student
+    image: '/assest/students learning.jpg',
   },
   {
     name: 'Arjun Reddy',
@@ -124,7 +121,7 @@ const testimonials = [
     school: 'Kendriya Vidyalaya',
     text: 'I participated in the drone racing competition and won second place! It was the best experience ever.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian student
+    image: '/assest/students.jpg',
   },
   {
     name: 'Kavya Nair',
@@ -132,7 +129,7 @@ const testimonials = [
     school: 'Vidya Valley School',
     text: 'The coding club helped me create my first game. I love coding now and want to become a game developer!',
     rating: 5,
-    image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian student
+    image: '/assest/students learning.jpg',
   },
 ];
 
@@ -141,19 +138,19 @@ const parentTestimonials = [
     name: 'Mrs. Meera Kapoor',
     relation: 'Mother of Grade 7 student',
     text: 'My daughter has become more confident and curious about technology. CodeKids has truly transformed her interest in STEM.',
-    image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian parent
+    image: '/assest/parents.jpg',
   },
   {
     name: 'Mr. Rajesh Kumar',
     relation: 'Father of Grade 9 student',
     text: 'Excellent program with hands-on learning. My son now spends his free time building projects instead of just playing games.',
-    image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian parent
+    image: '/assest/parents2.jpg',
   },
   {
     name: 'Dr. Sunita Rao',
     relation: 'Mother of Grade 10 student',
     text: 'The robotics program has helped my daughter discover her passion. She now wants to pursue engineering.',
-    image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian parent
+    image: '/assest/parents.jpg',
   },
 ];
 
@@ -216,22 +213,11 @@ export default function CodeKidsJrPage() {
     );
   }
 
-  // Prevent hydration mismatch
-  if (!isMounted) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-background">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
-          <p className="mt-4 text-muted-foreground">Loading...</p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen">
       {/* Hero Section with Carousel */}
-      <section className="relative h-[90vh] min-h-[700px] overflow-hidden pt-20 md:pt-0">
+      <section className="relative h-[85vh] sm:h-[90vh] min-h-[600px] sm:min-h-[700px] overflow-hidden pt-20 md:pt-0">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
@@ -239,18 +225,26 @@ export default function CodeKidsJrPage() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.8 }}
-            className="absolute inset-0"
+            className="absolute inset-0 z-0"
           >
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url(${heroCarousel[currentSlide].image})` }}
+            <Image
+              src={heroCarousel[currentSlide].image}
+              alt={heroCarousel[currentSlide].title}
+              fill
+              priority={currentSlide === 0}
+              className="object-cover"
+              sizes="100vw"
+              quality={95}
+              unoptimized
+              style={{ zIndex: 0 }}
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-pink-600/80 via-purple-600/80 to-blue-600/80 dark:from-pink-950/90 dark:via-purple-950/90 dark:to-blue-950/90" />
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzBoLTJWMGgyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-20 z-10" />
+            <div className="absolute inset-0 bg-gradient-to-br from-pink-600/60 via-purple-600/60 to-blue-600/60 dark:from-pink-950/70 dark:via-purple-950/70 dark:to-blue-950/70 z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10" />
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzBoLTJWMGgyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-15 z-10" />
           </motion.div>
         </AnimatePresence>
 
-        <div className="relative z-10 h-full flex items-center">
+        <div className="relative z-20 h-full flex items-center py-8 sm:py-12 md:py-0">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -262,10 +256,10 @@ export default function CodeKidsJrPage() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.2 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 dark:bg-black/20 backdrop-blur-sm mb-6 border border-pink-200 dark:border-pink-800"
+                className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-white/20 backdrop-blur-sm mb-4 sm:mb-6 border border-white/30"
               >
-                <Sparkles className="h-4 w-4 text-pink-500" />
-                <span className="text-sm font-medium text-foreground">For Schools • Offline Programs • Ages 6-17</span>
+                <Sparkles className="h-3 w-3 sm:h-4 sm:w-4 text-pink-300" />
+                <span className="text-xs sm:text-sm font-medium text-white">Future-Ready Tech Program • Ages 6–16</span>
               </motion.div>
 
               <AnimatePresence mode="wait">
@@ -275,31 +269,40 @@ export default function CodeKidsJrPage() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5 }}
+                  className="space-y-4 sm:space-y-6"
                 >
-                  <h1 className="text-foreground text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-heading leading-tight">
-                    Future-Ready STEM{' '}
-                    <span className="block bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] bg-clip-text text-transparent">
-                      Inside Your School
+                  <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 font-heading leading-tight">
+                    <span className="bg-gradient-to-r from-cyan-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
+                      CodeKids_Jr
+                    </span>
+                    <span className="block text-white mt-2 sm:mt-3">
+                      Future-Ready Tech Program
+                    </span>
+                    <span className="block text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 font-normal mt-3 sm:mt-4 max-w-3xl mx-auto">
+                      Making Children Smart, Creative, Confident & Future-Ready
                     </span>
                   </h1>
-                  <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-                    {heroCarousel[currentSlide].description}
+                  <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto px-4">
+                    We combine coding, robotics, AI, design, and life skills in a fun, structured way – so that both parents and schools see real, visible growth in every child.
                   </p>
                 </motion.div>
               </AnimatePresence>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Link
-                  href="#jr-demo-form"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+                  href="#contact"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 rounded-full bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all text-sm sm:text-base w-full sm:w-auto min-h-[48px] touch-manipulation"
                 >
-                  Request School Demo
-                  <Rocket className="h-5 w-5" />
+                  Book a Free Demo Class
+                  <Rocket className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                 </Link>
-                <button className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-purple-900 transition-all">
-                  <PlayCircle className="h-5 w-5" />
-                  Download Brochure
-                </button>
+                <Link
+                  href="#overview"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-purple-900 transition-all text-sm sm:text-base w-full sm:w-auto min-h-[48px] touch-manipulation"
+                >
+                  <PlayCircle className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                  Explore Programs
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -307,27 +310,776 @@ export default function CodeKidsJrPage() {
 
         <button
           onClick={() => setCurrentSlide((prev) => (prev - 1 + heroCarousel.length) % heroCarousel.length)}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 h-12 w-12 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 flex items-center justify-center transition-all"
+          className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 flex items-center justify-center transition-all"
+          aria-label="Previous slide"
         >
-          <ChevronLeft className="h-6 w-6 text-white" />
+          <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
         </button>
         <button
           onClick={() => setCurrentSlide((prev) => (prev + 1) % heroCarousel.length)}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 h-12 w-12 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 flex items-center justify-center transition-all"
+          className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 flex items-center justify-center transition-all"
+          aria-label="Next slide"
         >
-          <ChevronRight className="h-6 w-6 text-white" />
+          <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
         </button>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
           {heroCarousel.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`h-2 rounded-full transition-all ${
-                index === currentSlide ? 'w-8 bg-white' : 'w-2 bg-white/50'
+              className={`h-1.5 sm:h-2 rounded-full transition-all ${
+                index === currentSlide ? 'w-6 sm:w-8 bg-white' : 'w-1.5 sm:w-2 bg-white/50'
               }`}
+              aria-label={`Go to slide ${index + 1}`}
             />
           ))}
+        </div>
+      </section>
+
+      {/* Program Overview Section */}
+      <section id="overview" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-transparent via-purple-50/30 dark:via-purple-950/20 to-transparent">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12 sm:mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-blue-500/20 mb-4 sm:mb-6 border border-primary/20">
+              <Sparkles className="h-4 w-4 text-primary" />
+              <span className="text-sm font-semibold text-primary">What CodeKids_Jr Offers</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 font-heading">
+              <span className="bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] bg-clip-text text-transparent">
+                Built on 4 Powerful Pillars
+              </span>
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
+              A complete growth experience that makes CodeKids_Jr extremely attractive for parents and schools
+            </p>
+          </motion.div>
+
+          {/* Pillar Cards Preview */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
+            {[
+              {
+                title: 'Skill-Based Courses',
+                subtitle: 'Future-Ready Curriculum',
+                icon: BookOpen,
+                color: 'from-blue-500 to-cyan-500',
+                bgColor: 'from-blue-500/10 to-cyan-500/10',
+              },
+              {
+                title: 'Premium Services',
+                subtitle: 'For Students & Parents',
+                icon: Award,
+                color: 'from-purple-500 to-pink-500',
+                bgColor: 'from-purple-500/10 to-pink-500/10',
+              },
+              {
+                title: 'School Partnership',
+                subtitle: 'Complete Solutions',
+                icon: Building2,
+                color: 'from-pink-500 to-rose-500',
+                bgColor: 'from-pink-500/10 to-rose-500/10',
+              },
+              {
+                title: 'Parent Engagement',
+                subtitle: 'Trust Building',
+                icon: Heart,
+                color: 'from-orange-500 to-red-500',
+                bgColor: 'from-orange-500/10 to-red-500/10',
+              },
+            ].map((pillar, index) => (
+              <motion.div
+                key={pillar.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group"
+              >
+                <GlassCard className={`p-5 sm:p-6 h-full hover:scale-105 transition-all duration-300 bg-gradient-to-br ${pillar.bgColor} border-2 border-transparent hover:border-primary/30`}>
+                  <div className={`h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-gradient-to-br ${pillar.color} flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform`}>
+                    <pillar.icon className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2 font-heading text-foreground">{pillar.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{pillar.subtitle}</p>
+                </GlassCard>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pillar 1: Skill-Based Courses */}
+      <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12 sm:mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 mb-4 sm:mb-6 border border-blue-500/30">
+              <BookOpen className="h-4 w-4 text-blue-500" />
+              <span className="text-sm font-semibold text-blue-500">PILLAR 1</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-heading">
+              <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                Skill-Based Courses
+              </span>
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              A structured 3-level journey from basics to innovation
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+            {/* Foundation Level */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="group"
+            >
+              <GlassCard className="p-5 sm:p-6 md:p-8 h-full hover:scale-105 transition-all duration-300 border-2 border-blue-500/20 hover:border-blue-500/40 bg-gradient-to-br from-blue-500/5 to-cyan-500/5">
+                <div className="flex items-center gap-3 mb-4 sm:mb-6">
+                  <div className="h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">1</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold font-heading text-foreground">Foundations</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">Ages 6–10 Years • &quot;Tech Explorers&quot;</p>
+                  </div>
+                </div>
+                <div className="space-y-3 sm:space-y-4 mb-6">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                    Kids start their technology journey in a fun, safe way.
+                  </p>
+                  <div>
+                    <p className="text-xs sm:text-sm font-semibold text-foreground mb-2">They learn:</p>
+                    <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <span>Computer basics & digital literacy</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <span>Logical thinking & problem-solving</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <span>Scratch Jr & Scratch coding</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <span>Basic robotics (virtual + simple kits)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <span>Digital creativity (stories, animations, Canva basics)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="pt-3 border-t border-border">
+                    <p className="text-xs sm:text-sm font-semibold text-foreground mb-1">Outcome:</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground">
+                      Children become confident using computers, creating simple games, animations, and stories instead of just consuming content.
+                    </p>
+                  </div>
+                </div>
+              </GlassCard>
+            </motion.div>
+
+            {/* Intermediate Level */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="group"
+            >
+              <GlassCard className="p-5 sm:p-6 md:p-8 h-full hover:scale-105 transition-all duration-300 border-2 border-purple-500/20 hover:border-purple-500/40 bg-gradient-to-br from-purple-500/5 to-pink-500/5">
+                <div className="flex items-center gap-3 mb-4 sm:mb-6">
+                  <div className="h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">2</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold font-heading text-foreground">Intermediate</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">Ages 9–12 Years • &quot;Future Coders&quot;</p>
+                  </div>
+                </div>
+                <div className="space-y-3 sm:space-y-4 mb-6">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                    Students move from playing with tech to building with tech.
+                  </p>
+                  <div>
+                    <p className="text-xs sm:text-sm font-semibold text-foreground mb-2">They learn:</p>
+                    <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0 mt-0.5" />
+                        <span>Advanced Scratch programming</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0 mt-0.5" />
+                        <span>App development with MIT App Inventor</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0 mt-0.5" />
+                        <span>Game development logic</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0 mt-0.5" />
+                        <span>micro:bit robotics projects</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0 mt-0.5" />
+                        <span>AI basics using tools like Teachable Machine</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0 mt-0.5" />
+                        <span>Data basics – charts, graphs, and simple visualizations</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="pt-3 border-t border-border">
+                    <p className="text-xs sm:text-sm font-semibold text-foreground mb-1">Outcome:</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground">
+                      Students build working apps, robotics outputs, and simple AI models, and start thinking like real problem-solvers.
+                    </p>
+                  </div>
+                </div>
+              </GlassCard>
+            </motion.div>
+
+            {/* Advanced Level */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="group"
+            >
+              <GlassCard className="p-5 sm:p-6 md:p-8 h-full hover:scale-105 transition-all duration-300 border-2 border-pink-500/20 hover:border-pink-500/40 bg-gradient-to-br from-pink-500/5 to-rose-500/5">
+                <div className="flex items-center gap-3 mb-4 sm:mb-6">
+                  <div className="h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center shadow-lg">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">3</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold font-heading text-foreground">Advanced</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">Ages 12–16 Years • &quot;Teen Innovators&quot;</p>
+                  </div>
+                </div>
+                <div className="space-y-3 sm:space-y-4 mb-6">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                    Teens transform into young innovators and creators.
+                  </p>
+                  <div>
+                    <p className="text-xs sm:text-sm font-semibold text-foreground mb-2">They learn:</p>
+                    <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-pink-500 flex-shrink-0 mt-0.5" />
+                        <span>Python programming</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-pink-500 flex-shrink-0 mt-0.5" />
+                        <span>Web development basics (HTML, CSS, JavaScript)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-pink-500 flex-shrink-0 mt-0.5" />
+                        <span>Robotics & IoT with Arduino / micro:bit / ESP32</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-pink-500 flex-shrink-0 mt-0.5" />
+                        <span>Applied AI (image/sound classification, chatbots)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-pink-500 flex-shrink-0 mt-0.5" />
+                        <span>UI/UX basics – designing user-friendly apps & websites</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-pink-500 flex-shrink-0 mt-0.5" />
+                        <span>Teen entrepreneurship – idea → prototype → pitch</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="pt-3 border-t border-border">
+                    <p className="text-xs sm:text-sm font-semibold text-foreground mb-1">Outcome:</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground">
+                      Teens build real tech projects, present them with confidence, and learn how to pitch ideas like young entrepreneurs.
+                    </p>
+                  </div>
+                </div>
+              </GlassCard>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pillar 2: Premium Services */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-transparent via-purple-50/30 dark:via-purple-950/20 to-transparent relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12 sm:mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 mb-4 sm:mb-6 border border-purple-500/30">
+              <Award className="h-4 w-4 text-purple-500" />
+              <span className="text-sm font-semibold text-purple-500">PILLAR 2</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-heading">
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Premium Services for Students & Parents
+              </span>
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              Most institutes just &quot;teach classes&quot;. CodeKids_Jr delivers a complete growth experience.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {[
+              {
+                title: 'Personal Student Portfolio Website',
+                icon: Globe,
+                color: 'from-blue-500 to-cyan-500',
+                description: 'Every child gets a personal portfolio website showcasing games, apps, robotics & AI projects, designs, videos, and achievements. Acts as a digital resume for future schools, competitions, and early career opportunities.',
+                highlight: 'Parents absolutely love seeing their child&apos;s work online.',
+              },
+              {
+                title: 'High-Quality Self-Introduction Video',
+                icon: Video,
+                color: 'from-purple-500 to-pink-500',
+                description: 'We train students to speak confidently, present their tech projects, record clear self-introductions, and edit and publish the final video. Builds confidence, communication skills, and stage presence.',
+              },
+              {
+                title: 'LinkedIn & GitHub Setup (for Teens)',
+                icon: Network,
+                color: 'from-indigo-500 to-blue-500',
+                description: 'For students aged 13–16, we help create professional LinkedIn profiles, upload projects and achievements, and set up GitHub coding portfolios. Parents see their child building a digital presence early.',
+              },
+              {
+                title: 'Progress Reports + AI-Based Assessments',
+                icon: BarChart3,
+                color: 'from-green-500 to-emerald-500',
+                description: 'Every month, parents receive detailed skill reports, performance charts, project evaluations, teacher feedback, and personalized growth roadmaps. Parents see clear, data-backed progress.',
+              },
+              {
+                title: 'Certificates for Every Level',
+                icon: Award,
+                color: 'from-yellow-500 to-orange-500',
+                description: 'Students receive course completion certificates, excellence certificates, project & innovation certificates, and TechFest participation certificates. Adds credibility and motivation.',
+              },
+              {
+                title: 'Live Interactive Classes + Project Reviews',
+                icon: Users,
+                color: 'from-pink-500 to-rose-500',
+                description: 'Every program includes weekly live classes, doubt-clearing sessions, one-to-one project reviews, and presentation practice with feedback. Students present, discuss, and improve.',
+              },
+              {
+                title: 'Technology Events & Challenges',
+                icon: Trophy,
+                color: 'from-red-500 to-pink-500',
+                description: 'We keep students excited with hackathons, robotics challenge days, AI showcase events, and annual TechFest for students & parents. Creates a competitive, fun, and inspiring ecosystem.',
+              },
+            ].map((service, index) => (
+              <motion.div
+                key={service.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group"
+              >
+                <GlassCard className={`p-5 sm:p-6 h-full hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-primary/30 bg-gradient-to-br from-secondary/50 to-secondary/30`}>
+                  <div className={`h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform`}>
+                    <service.icon className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 font-heading text-foreground">{service.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed mb-2">{service.description}</p>
+                  {service.highlight && (
+                    <p className="text-xs sm:text-sm font-semibold text-primary mt-2">👉 {service.highlight}</p>
+                  )}
+                </GlassCard>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pillar 3: School Partnership Solutions */}
+      <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12 sm:mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500/20 to-rose-500/20 mb-4 sm:mb-6 border border-pink-500/30">
+              <Building2 className="h-4 w-4 text-pink-500" />
+              <span className="text-sm font-semibold text-pink-500">PILLAR 3</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-heading">
+              <span className="bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
+                School Partnership Solutions
+              </span>
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              CodeKids_Jr is not just a course – it&apos;s a plug-and-play tech education partner for schools.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            {[
+              {
+                title: 'Complete Coding, AI & Robotics Curriculum',
+                icon: BookOpen,
+                color: 'from-blue-500 to-cyan-500',
+                features: [
+                  'Full-year, NEP-aligned syllabus',
+                  'Ready-made lesson plans',
+                  'Worksheets & activities',
+                  'Projects & assessments',
+                  'Report card formats',
+                  'Teacher manuals',
+                ],
+                description: 'Schools get a ready-to-implement curriculum without needing to build content from scratch.',
+              },
+              {
+                title: 'Tinkering Lab / AI Lab Setup',
+                icon: Settings,
+                color: 'from-purple-500 to-pink-500',
+                features: [
+                  'Robotics kits and AI kits',
+                  'Coding devices & tools',
+                  'Concept posters',
+                  'Virtual labs for simulations',
+                  'Teacher training and support',
+                ],
+                description: 'Gives schools a modern, &quot;future-ready&quot; lab that impresses parents and boosts admissions.',
+              },
+              {
+                title: 'Teacher Training Programs',
+                icon: GraduationCap,
+                color: 'from-indigo-500 to-blue-500',
+                features: [
+                  'Hands-on training in coding & computational thinking',
+                  'Robotics & electronics training',
+                  'AI tools and classroom activities',
+                  'Innovative teaching techniques using technology',
+                ],
+                description: 'Builds in-house capacity for schools and makes their teachers confident in teaching modern skills.',
+              },
+              {
+                title: 'School Tech Events',
+                icon: Trophy,
+                color: 'from-orange-500 to-red-500',
+                features: [
+                  'Tech Carnivals',
+                  'Robotics competitions',
+                  'AI model expos',
+                  'Coding championships',
+                  'App-building challenges',
+                ],
+                description: 'Helps schools showcase innovation, attract new admissions, and delight existing parents.',
+              },
+            ].map((solution, index) => (
+              <motion.div
+                key={solution.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group"
+              >
+                <GlassCard className={`p-5 sm:p-6 md:p-8 h-full hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-primary/30 bg-gradient-to-br from-secondary/50 to-secondary/30`}>
+                  <div className={`h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-gradient-to-br ${solution.color} flex items-center justify-center mb-4 sm:mb-6 shadow-lg group-hover:scale-110 transition-transform`}>
+                    <solution.icon className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 font-heading text-foreground">{solution.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground mb-4 leading-relaxed">{solution.description}</p>
+                  <ul className="space-y-2">
+                    {solution.features.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <CheckCircle className={`h-4 w-4 flex-shrink-0 mt-0.5 bg-gradient-to-br ${solution.color} bg-clip-text text-transparent`} />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </GlassCard>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pillar 4: Parent Engagement */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-transparent via-purple-50/30 dark:via-purple-950/20 to-transparent relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12 sm:mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-orange-500/20 to-red-500/20 mb-4 sm:mb-6 border border-orange-500/30">
+              <Heart className="h-4 w-4 text-orange-500" />
+              <span className="text-sm font-semibold text-orange-500">PILLAR 4</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-heading">
+              <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                Parent Engagement & Trust Building
+              </span>
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              We believe parents should be partners in the learning journey.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            {[
+              {
+                title: 'Free Parenting & Technology Workshops',
+                icon: Users,
+                color: 'from-blue-500 to-cyan-500',
+                topics: [
+                  'How AI will shape your child\'s future',
+                  'How to guide children in technology',
+                  'Digital safety & screen-time management',
+                  'Choosing the right tech path for your child',
+                ],
+                description: 'Regular sessions that make parents feel informed, supported, and involved.',
+              },
+              {
+                title: 'Demo Days & Project Exhibitions',
+                icon: Presentation,
+                color: 'from-purple-500 to-pink-500',
+                topics: [
+                  'Watch project presentations',
+                  'See robotics & AI demos',
+                  'Attend certificate ceremonies',
+                ],
+                description: 'When parents see real projects and real confidence, trust becomes automatic.',
+              },
+              {
+                title: 'Personalized Progress Calls',
+                icon: MessageSquare,
+                color: 'from-pink-500 to-rose-500',
+                topics: [
+                  'Child\'s strengths discussion',
+                  'Areas for improvement',
+                  'Next-level learning roadmap',
+                ],
+                description: 'Every term, our team connects with parents. Parents feel heard, respected, and closely connected.',
+              },
+            ].map((engagement, index) => (
+              <motion.div
+                key={engagement.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group"
+              >
+                <GlassCard className={`p-5 sm:p-6 md:p-8 h-full hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-primary/30 bg-gradient-to-br from-secondary/50 to-secondary/30`}>
+                  <div className={`h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-gradient-to-br ${engagement.color} flex items-center justify-center mb-4 sm:mb-6 shadow-lg group-hover:scale-110 transition-transform`}>
+                    <engagement.icon className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 font-heading text-foreground">{engagement.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground mb-4 leading-relaxed">{engagement.description}</p>
+                  <ul className="space-y-2">
+                    {engagement.topics.map((topic, i) => (
+                      <li key={i} className="flex items-start gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <CheckCircle className={`h-4 w-4 flex-shrink-0 mt-0.5 bg-gradient-to-br ${engagement.color} bg-clip-text text-transparent`} />
+                        <span>{topic}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </GlassCard>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Parents Choose Section */}
+      <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12 sm:mb-16"
+          >
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-heading">
+              Why Parents <span className="bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] bg-clip-text text-transparent">Choose</span> CodeKids_Jr
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {[
+              { icon: Rocket, text: 'Future-ready skills: Coding, robotics, AI, app dev, web dev', color: 'from-blue-500 to-cyan-500' },
+              { icon: TrendingUp, text: 'Confidence boost: Public speaking, presentations, teamwork', color: 'from-purple-500 to-pink-500' },
+              { icon: Globe, text: 'Digital portfolio: Website, GitHub, videos – visible proof of learning', color: 'from-pink-500 to-rose-500' },
+              { icon: BarChart, text: 'Transparent progress: Monthly reports, AI-based assessments, feedback', color: 'from-green-500 to-emerald-500' },
+              { icon: Shield, text: 'Safe & structured: Age-wise curriculum and guided learning', color: 'from-indigo-500 to-blue-500' },
+              { icon: Target, text: 'Long-term impact: Strong foundation for future careers and academics', color: 'from-orange-500 to-red-500' },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <GlassCard className="p-5 sm:p-6 min-h-[140px] sm:min-h-[160px] flex flex-col hover:scale-105 transition-transform duration-300 border border-border/50 hover:border-primary/30 h-full">
+                  <div className={`h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center mb-4 flex-shrink-0`}>
+                    <item.icon className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                  </div>
+                  <p className="text-sm sm:text-base font-medium text-foreground leading-relaxed flex-grow">
+                    ⭐ {item.text}
+                  </p>
+                </GlassCard>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Schools Partner Section */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-transparent via-purple-50/30 dark:via-purple-950/20 to-transparent relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12 sm:mb-16"
+          >
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-heading">
+              Why Schools <span className="bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] bg-clip-text text-transparent">Partner</span> with CodeKids_Jr
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            {[
+              { icon: BookOpen, text: 'Complete coding, AI & robotics curriculum ready to implement', color: 'from-blue-500 to-cyan-500' },
+              { icon: GraduationCap, text: 'Teacher training and continuous support', color: 'from-purple-500 to-pink-500' },
+              { icon: Settings, text: 'Tinkering / Robotics / AI Lab setup', color: 'from-pink-500 to-rose-500' },
+              { icon: Trophy, text: 'TechFest, competitions, and events to impress parents', color: 'from-orange-500 to-red-500' },
+              { icon: Award, text: 'Strong branding as a &quot;future-ready&quot; school', color: 'from-green-500 to-emerald-500' },
+              { icon: TrendingUp, text: 'Better admissions & parent satisfaction', color: 'from-indigo-500 to-blue-500' },
+              { icon: Zap, text: 'Zero extra burden – we handle content, training, and execution', color: 'from-red-500 to-pink-500' },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <GlassCard className="p-5 sm:p-6 flex items-start gap-4 hover:scale-105 transition-transform duration-300 border border-border/50 hover:border-primary/30">
+                  <div className={`h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center flex-shrink-0 shadow-lg`}>
+                    <item.icon className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                  </div>
+                  <p className="text-sm sm:text-base font-medium text-foreground leading-relaxed flex-grow pt-2">
+                    ✔ {item.text}
+                  </p>
+                </GlassCard>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Highlight Section */}
+      <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12 sm:mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 mb-4 sm:mb-6 border border-primary/20">
+              <Sparkles className="h-4 w-4 text-primary" />
+              <span className="text-sm font-semibold text-primary">Complete Growth Package</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-heading">
+              <span className="bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] bg-clip-text text-transparent">
+                CodeKids_Jr – One Program, Complete Growth
+              </span>
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
+            {/* For Students */}
+            <GlassCard className="p-6 sm:p-8 md:p-10 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 border-2 border-primary/30">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center shadow-lg">
+                  <Users className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold font-heading text-foreground">For Students</h3>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                {[
+                  'Coding: Scratch, Python, App Development',
+                  'Robotics & IoT',
+                  'Artificial Intelligence for kids',
+                  'Data science basics',
+                  'Graphic design & video creation',
+                  'Confidence training & presentations',
+                  'Personal student portfolio website',
+                  'AI-based progress reports',
+                  'Live interactive classes',
+                  'Certificates at every level',
+                  'Self-introduction video for every student',
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-xs sm:text-sm text-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </GlassCard>
+
+            {/* For Schools */}
+            <GlassCard className="p-6 sm:p-8 md:p-10 bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-rose-500/10 border-2 border-primary/30">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
+                  <School className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold font-heading text-foreground">For Schools</h3>
+              </div>
+              <div className="space-y-3 sm:space-y-4">
+                {[
+                  'Full-year tech curriculum',
+                  'Teacher training',
+                  'Tinkering / Robotics / AI lab setup',
+                  'TechFest & competitions',
+                  'Assessments & report cards',
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-foreground font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </GlassCard>
+          </div>
         </div>
       </section>
 
@@ -454,7 +1206,7 @@ export default function CodeKidsJrPage() {
         <div className="absolute inset-0 z-0">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5 dark:opacity-3"
-            style={{ backgroundImage: "url('https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1920')" }}
+            style={{ backgroundImage: "url('/assest/kids robotics.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10" />
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDMwaC0yVjBoMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20" />
@@ -574,7 +1326,7 @@ export default function CodeKidsJrPage() {
             >
               <div className="relative h-[600px] rounded-3xl overflow-hidden group shadow-2xl">
                 <Image
-                  src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/assest/kids robotics.jpg"
                   alt="Offline School Programs"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -813,7 +1565,7 @@ export default function CodeKidsJrPage() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
               <Image
-                src="https://images.pexels.com/photos/5905717/pexels-photo-5905717.jpeg?auto=compress&cs=tinysrgb&w=1920"
+                src="/assest/codekids jr learning.jpg"
                 alt="Transform Your Institute"
                 fill
                 className="object-cover"
@@ -946,7 +1698,7 @@ export default function CodeKidsJrPage() {
         <div className="absolute inset-0 z-0">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 dark:opacity-5"
-            style={{ backgroundImage: "url('https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1920')" }}
+            style={{ backgroundImage: "url('/assest/coding.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-blue-500/10" />
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDMwaC0yVjBoMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30" />
@@ -990,7 +1742,7 @@ export default function CodeKidsJrPage() {
             >
               <div className="relative h-[600px] rounded-3xl overflow-hidden group shadow-2xl">
                 <Image
-                  src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/assest/online classes.jpg"
                   alt="Online Coding Classes for Kids"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -1164,7 +1916,7 @@ export default function CodeKidsJrPage() {
                   age: 'Ages 6-9',
                   duration: '12 weeks',
                   sessions: '2x per week',
-                  image: 'https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800',
+                  image: '/assest/coding.jpg',
                   icon: Code,
                   color: 'from-pink-500 to-rose-500',
                   features: ['Visual programming', 'Game creation', 'Animation basics', 'Storytelling'],
@@ -1175,7 +1927,7 @@ export default function CodeKidsJrPage() {
                   age: 'Ages 10-13',
                   duration: '16 weeks',
                   sessions: '2x per week',
-                  image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800',
+                  image: '/assest/students learning.jpg',
                   icon: Brain,
                   color: 'from-purple-500 to-indigo-500',
                   features: ['Python fundamentals', 'Projects & games', 'Problem solving', 'Logic building'],
@@ -1186,7 +1938,7 @@ export default function CodeKidsJrPage() {
                   age: 'Ages 12-16',
                   duration: '20 weeks',
                   sessions: '2x per week',
-                  image: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=800',
+                  image: '/assest/ai.jpg',
                   icon: Cpu,
                   color: 'from-blue-500 to-cyan-500',
                   features: ['HTML & CSS', 'JavaScript basics', 'Build websites', 'Portfolio creation'],
@@ -1197,7 +1949,7 @@ export default function CodeKidsJrPage() {
                   age: 'Ages 8-14',
                   duration: '14 weeks',
                   sessions: '2x per week',
-                  image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800',
+                  image: '/assest/kids robotics.jpg',
                   icon: Zap,
                   color: 'from-orange-500 to-red-500',
                   features: ['Virtual robotics', 'Arduino basics', 'Circuit design', 'IoT projects'],
@@ -1208,7 +1960,7 @@ export default function CodeKidsJrPage() {
                   age: 'Ages 11-16',
                   duration: '18 weeks',
                   sessions: '2x per week',
-                  image: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=800',
+                  image: '/assest/ai.jpg',
                   icon: Brain,
                   color: 'from-indigo-500 to-purple-500',
                   features: ['AI concepts', 'Machine learning', 'Data science', 'Real projects'],
@@ -1219,7 +1971,7 @@ export default function CodeKidsJrPage() {
                   age: 'Ages 10-16',
                   duration: '16 weeks',
                   sessions: '2x per week',
-                  image: 'https://images.pexels.com/photos/5905717/pexels-photo-5905717.jpeg?auto=compress&cs=tinysrgb&w=800',
+                  image: '/assest/learning.jpg',
                   icon: Rocket,
                   color: 'from-green-500 to-emerald-500',
                   features: ['Game design', 'Unity basics', '2D & 3D games', 'Publish games'],

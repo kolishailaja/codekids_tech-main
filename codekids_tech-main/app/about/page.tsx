@@ -11,28 +11,24 @@ import {
   Sparkles, ArrowRight, PlayCircle, Layers
 } from 'lucide-react';
 import { GlassCard } from '@/components/ui/glass-card';
+import { handleAnchorClick } from '@/lib/smooth-scroll';
 
 // Hero carousel images
 const heroSlides = [
   {
     title: 'AI & Machine Learning',
     description: 'Empowering students with cutting-edge AI education',
-    image: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '/assest/ai.jpg',
   },
   {
     title: 'Robotics & Automation',
     description: 'Hands-on robotics training for future innovators',
-    image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '/assest/kids robotics.jpg',
   },
   {
     title: 'Coding & Development',
     description: 'Building the next generation of software developers',
-    image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1920',
-  },
-  {
-    title: 'STEM Innovation Labs',
-    description: 'State-of-the-art labs for experiential learning',
-    image: 'https://images.pexels.com/photos/5905717/pexels-photo-5905717.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '/assest/coding.jpg',
   },
 ];
 
@@ -119,6 +115,7 @@ export default function AboutPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="#get-demo"
+                  onClick={(e) => handleAnchorClick(e, '#get-demo')}
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-purple-900 font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
                 >
                   Get a Free Demo Class
@@ -168,7 +165,7 @@ export default function AboutPage() {
       <div className="absolute inset-0 z-0">
         <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5 dark:opacity-3"
-          style={{ backgroundImage: "url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1920')" }}
+          style={{ backgroundImage: "url('/assest/learning.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/95 to-background" />
       </div>
@@ -200,10 +197,13 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-96 rounded-2xl overflow-hidden">
                   <Image
-                    src="https://images.pexels.com/photos/5905717/pexels-photo-5905717.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/assest/students learning.jpg"
                     alt="Students learning technology"
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    quality={90}
+                    unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
@@ -244,10 +244,13 @@ export default function AboutPage() {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="relative h-96 rounded-2xl overflow-hidden order-2 md:order-1">
                   <Image
-                    src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/assest/kids robotics.jpg"
                     alt="CodeKids Jr - School Programs"
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    quality={90}
+                    unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-pink-500/40 to-transparent" />
                 </div>
@@ -344,10 +347,13 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-96 rounded-2xl overflow-hidden">
                   <Image
-                    src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/assest/coding (2).jpg"
                     alt="CodeKids Pro - Career Programs"
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    quality={90}
+                    unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-purple-500/40 to-transparent" />
                 </div>
@@ -365,10 +371,13 @@ export default function AboutPage() {
               <GlassCard className="h-full p-8 relative overflow-hidden group">
                 <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
                   <Image
-                    src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/assest/motivation.jpg"
                     alt="Mission"
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    quality={90}
+                    unoptimized
                   />
                 </div>
                 <div className="relative z-10">
@@ -394,10 +403,13 @@ export default function AboutPage() {
               <GlassCard className="h-full p-8 relative overflow-hidden group">
                 <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
                   <Image
-                    src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/assest/dream.jpg"
                     alt="Vision"
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    quality={90}
+                    unoptimized
                   />
                 </div>
                 <div className="relative z-10">
@@ -433,10 +445,13 @@ export default function AboutPage() {
             <GlassCard className="p-8 md:p-12 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-96 h-96 opacity-5">
                 <Image
-                  src="https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/assest/success.jpg"
                   alt="Why CodeKids"
                   fill
                   className="object-cover rounded-full"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={90}
+                  unoptimized
                 />
               </div>
               <div className="relative z-10">
@@ -585,7 +600,7 @@ export default function AboutPage() {
                       priority
                       onError={(e) => {
                         // Fallback if image doesn't exist yet
-                        (e.target as HTMLImageElement).src = 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=800';
+                        (e.target as HTMLImageElement).src = '/assest/prof-dn-reddy.jpg';
                       }}
                     />
                     
@@ -745,7 +760,7 @@ export default function AboutPage() {
                         unoptimized
                         onError={(e) => {
                           // Fallback if image doesn't exist yet
-                          (e.target as HTMLImageElement).src = 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400';
+                          (e.target as HTMLImageElement).src = '/assest/students.jpg';
                         }}
                       />
                       <div className={`absolute inset-0 bg-gradient-to-t ${member.color} opacity-0 group-hover:opacity-20 transition-opacity`} />

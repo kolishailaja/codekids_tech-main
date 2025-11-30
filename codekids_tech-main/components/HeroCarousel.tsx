@@ -8,17 +8,17 @@ const slides = [
   {
     title: 'Kids Learning Robotics',
     description: 'Students building robots and learning coding',
-    image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
+    image: '/assest/kids robotics.jpg',
   },
   {
     title: 'Drone Programming',
     description: 'Young minds exploring drone technology',
-    image: 'https://images.pexels.com/photos/8613317/pexels-photo-8613317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
+    image: '/assest/drone.jpg',
   },
   {
     title: 'Coding Workspace',
     description: 'Future developers at work',
-    image: 'https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
+    image: '/assest/coding.jpg',
   },
 ];
 

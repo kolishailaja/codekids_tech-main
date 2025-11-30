@@ -15,14 +15,17 @@ const Footer = dynamic(() => import('@/components/Footer'), {
 
 const ChatbotLauncher = dynamic(() => import('@/components/ChatbotLauncher'), {
   ssr: false,
+  loading: () => null,
 });
 
 const CROOptimizer = dynamic(() => import('@/components/CROOptimizer'), {
   ssr: false,
+  loading: () => null,
 });
 
 const WebsiteLoader = dynamic(() => import('@/components/WebsiteLoader'), {
   ssr: false,
+  loading: () => null,
 });
 
 const inter = Inter({ 
@@ -41,7 +44,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://codekids.tech'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://codekids.tech'),
   title: {
     default: 'CodeKids Technologies | Best Coding Courses for Kids & Students | STEM Education India',
     template: '%s | CodeKids Technologies'
@@ -93,6 +96,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://codekids.tech',
   },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({

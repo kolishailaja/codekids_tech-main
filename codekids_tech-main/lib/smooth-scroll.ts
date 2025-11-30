@@ -33,17 +33,33 @@ export function handleAnchorClick(
   href: string,
   offset = 80
 ) {
-  // Only handle if it's an anchor link
-  if (!href.startsWith('#')) return;
+  // Handle both anchor-only links (#section) and full path with hash (/page#section)
+  if (!href || (!href.startsWith('#') && !href.includes('#'))) {
+    return; // Not an anchor link, let default behavior handle it
+  }
 
   e.preventDefault();
   
-  const elementId = href.substring(1);
+  let elementId: string;
+  if (href.startsWith('#')) {
+    // Just an anchor link
+    elementId = href.substring(1);
+  } else {
+    // Full path with hash, extract hash
+    const hashIndex = href.indexOf('#');
+    if (hashIndex !== -1) {
+      elementId = href.substring(hashIndex + 1);
+    } else {
+      return; // No hash found
+    }
+  }
+  
   smoothScrollToElement(elementId, offset);
   
   // Update URL without scrolling (already handled above)
   if (typeof window !== 'undefined' && window.history.pushState) {
-    window.history.pushState(null, '', href);
+    const hash = href.startsWith('#') ? href : `#${elementId}`;
+    window.history.pushState(null, '', hash);
   }
 }
 

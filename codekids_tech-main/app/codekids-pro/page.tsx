@@ -8,7 +8,9 @@ import {
   Code, Cloud, Shield, Database, Palette, Cpu, Briefcase, GraduationCap, 
   CheckCircle, Rocket, Users, Award, TrendingUp, Star, Zap, Target,
   Building2, Calendar, DollarSign, BookOpen, Laptop, Brain, Layers,
-  ChevronLeft, ChevronRight, ArrowRight, PlayCircle
+  ChevronLeft, ChevronRight, ArrowRight, PlayCircle, X, Sparkles,
+  BarChart3, Eye, FileText, Globe, ChevronDown, Lightbulb, Server,
+  Lock, UserCheck, TrendingDown, GitBranch, Linkedin, Terminal
 } from 'lucide-react';
 import { GlassCard } from '@/components/ui/glass-card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -17,22 +19,17 @@ const heroCarousel = [
   {
     title: 'Full Stack Development',
     description: 'Master MERN stack, APIs, and modern frameworks',
-    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1920',
-  },
-  {
-    title: 'Cloud Computing & DevOps',
-    description: 'AWS, Azure, Docker, Kubernetes, and CI/CD pipelines',
-    image: 'https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '/assest/coding.jpg',
   },
   {
     title: 'AI & Machine Learning',
     description: 'Build intelligent systems with Python and TensorFlow',
-    image: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '/assest/ai.jpg',
   },
   {
-    title: 'Data Science',
-    description: 'Analytics, visualization, and predictive modeling',
-    image: 'https://images.pexels.com/photos/5905717/pexels-photo-5905717.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    title: 'Job-Ready Skills',
+    description: 'Industry-focused training with placement support',
+    image: '/assest/job ready.jpg',
   },
 ];
 
@@ -42,7 +39,7 @@ const tracks = [
     icon: Code, 
     color: 'from-blue-500 to-cyan-500', 
     duration: '6 months',
-    image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/coding.jpg',
     description: 'Master frontend, backend, and database technologies to build complete web applications',
     skills: ['React, Node.js', 'MongoDB, PostgreSQL', 'REST APIs', 'Deployment'],
   },
@@ -51,7 +48,7 @@ const tracks = [
     icon: Cloud, 
     color: 'from-purple-500 to-pink-500', 
     duration: '4 months',
-    image: 'https://images.pexels.com/photos/1181325/pexels-photo-1181325.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/online classes.jpg',
     description: 'Deploy scalable cloud solutions on AWS, Azure, and Google Cloud Platform',
     skills: ['AWS, Azure, GCP', 'Docker & Kubernetes', 'Serverless', 'CI/CD'],
   },
@@ -60,7 +57,7 @@ const tracks = [
     icon: Cpu, 
     color: 'from-orange-500 to-red-500', 
     duration: '5 months',
-    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/learning.jpg',
     description: 'Automate deployment pipelines and manage infrastructure as code',
     skills: ['Jenkins, GitLab CI', 'Terraform, Ansible', 'Monitoring', 'Kubernetes'],
   },
@@ -69,7 +66,7 @@ const tracks = [
     icon: Shield, 
     color: 'from-green-500 to-teal-500', 
     duration: '6 months',
-    image: 'https://images.pexels.com/photos/5905717/pexels-photo-5905717.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/preparation.jpg',
     description: 'Protect systems and networks from cyber threats and vulnerabilities',
     skills: ['Ethical Hacking', 'Penetration Testing', 'Security Audits', 'Risk Management'],
   },
@@ -78,7 +75,7 @@ const tracks = [
     icon: Database, 
     color: 'from-indigo-500 to-purple-500', 
     duration: '6 months',
-    image: 'https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/data science.jpg',
     description: 'Extract insights from data using Python, SQL, and machine learning',
     skills: ['Python, R', 'SQL, NoSQL', 'Machine Learning', 'Data Visualization'],
   },
@@ -87,7 +84,7 @@ const tracks = [
     icon: Palette, 
     color: 'from-pink-500 to-rose-500', 
     duration: '4 months',
-    image: 'https://images.pexels.com/photos/5905717/pexels-photo-5905717.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/designing.jpg',
     description: 'Create beautiful and user-friendly digital experiences',
     skills: ['Figma, Sketch', 'User Research', 'Prototyping', 'Design Systems'],
   },
@@ -99,7 +96,7 @@ const internships = [
     company: 'StartupHub',
     duration: '3 months',
     type: 'Paid',
-    image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/job ready.jpg',
     description: 'Work on real products with startup teams',
   },
   {
@@ -107,7 +104,7 @@ const internships = [
     company: 'TechCorp Solutions',
     duration: '6 months',
     type: 'Paid + Stipend',
-    image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/job.jpg',
     description: 'Build enterprise-scale applications',
   },
   {
@@ -115,7 +112,7 @@ const internships = [
     company: 'Innovation Labs',
     duration: '4 months',
     type: 'Paid',
-    image: 'https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/ai.jpg',
     description: 'Contribute to cutting-edge AI research',
   },
   {
@@ -123,7 +120,7 @@ const internships = [
     company: 'Digital Agency',
     duration: '3 months',
     type: 'Paid',
-    image: 'https://images.pexels.com/photos/8438983/pexels-photo-8438983.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/coding.jpg',
     description: 'Build client projects from scratch',
   },
 ];
@@ -132,28 +129,28 @@ const projects = [
   {
     title: 'E-Commerce Platform',
     tech: 'MERN Stack',
-    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/coding.jpg',
     description: 'Full-featured online shopping platform with payment integration',
     github: '#',
   },
   {
     title: 'AI Chatbot',
     tech: 'Python, TensorFlow',
-    image: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/ai.jpg',
     description: 'Intelligent chatbot using NLP and machine learning',
     github: '#',
   },
   {
     title: 'Cloud Analytics Dashboard',
     tech: 'AWS, React, Python',
-    image: 'https://images.pexels.com/photos/1181325/pexels-photo-1181325.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/data science.jpg',
     description: 'Real-time data visualization and analytics platform',
     github: '#',
   },
   {
     title: 'Mobile Banking App',
     tech: 'React Native, Node.js',
-    image: 'https://images.pexels.com/photos/5905717/pexels-photo-5905717.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assest/online classes.jpg',
     description: 'Secure mobile banking application with biometric auth',
     github: '#',
   },
@@ -179,6 +176,7 @@ const stats = [
 
 export default function CodeKidsProPage() {
   const [currentHeroSlide, setCurrentHeroSlide] = useState(0);
+  const [expandedSections, setExpandedSections] = useState<{ [key: string]: boolean }>({});
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -186,6 +184,13 @@ export default function CodeKidsProPage() {
     }, 5000);
     return () => clearInterval(timer);
   }, []);
+
+  const toggleSection = (sectionId: string) => {
+    setExpandedSections((prev) => ({
+      ...prev,
+      [sectionId]: !prev[sectionId],
+    }));
+  };
 
   return (
     <div className="min-h-screen">
@@ -314,7 +319,7 @@ export default function CodeKidsProPage() {
         </div>
       </section>
 
-      {/* Tracks Section with Images */}
+      {/* Combined Courses Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -324,10 +329,2861 @@ export default function CodeKidsProPage() {
             className="text-center mb-16"
           >
             <h2 className="text-foreground text-4xl md:text-5xl font-bold mb-4 font-heading">
-              Choose Your <span className="bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] bg-clip-text text-transparent">Tech Track</span>
+              4 Career-Defining <span className="bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] bg-clip-text text-transparent">Combined Courses</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Industry-ready combination programs crafted for maximum skill, project depth & job readiness
+            </p>
+          </motion.div>
+
+          {/* Course 1: AI + ML + Full-Stack */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-20"
+          >
+            <div className="flex items-center gap-3 mb-8">
+              <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center">
+                <Brain className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold font-heading">🟦 1️⃣ GENERATIVE AI + ML + FULL-STACK DEVELOPMENT</h3>
+                <p className="text-sm text-muted-foreground">Flagship, premium, highest-value course</p>
+              </div>
+            </div>
+            {/* Program Pathways - Focus on Value, Not Pricing */}
+            <div className="mb-12">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-8"
+              >
+                <h4 className="text-2xl md:text-3xl font-bold font-heading mb-3">
+                  Choose Your <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">Learning Path</span>
+                </h4>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Choose from industry-level programs designed for your career goals
+                </p>
+              </motion.div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                {/* Foundation Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <GlassCard className="p-6 border-2 border-green-500/30 bg-gradient-to-br from-green-500/5 to-emerald-500/5 h-full hover:scale-105 transition-transform duration-300">
+                    <div className="mb-4">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-green-500 text-white text-xs font-semibold">⭐ FOUNDATION</span>
+                        <span className="text-xs text-muted-foreground">4 Months • 32 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-green-500/10 rounded-lg border border-green-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">2 live classes per week for 4 months</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: Beginners, self-learners, students with limited time</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Live + Recorded Classes</p>
+                          <p className="text-xs text-muted-foreground">Learn at your own pace with full access</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Code className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">3 Real-World Projects</p>
+                          <p className="text-xs text-muted-foreground">Build beginner AI + Full-stack integration projects</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <FileText className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Resume Creation</p>
+                          <p className="text-xs text-muted-foreground">Professional resume done for you</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Globe className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Hosted Mini Portfolio</p>
+                          <p className="text-xs text-muted-foreground">Showcase your projects online</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Linkedin className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">LinkedIn & GitHub Optimization</p>
+                          <p className="text-xs text-muted-foreground">Starter optimization to get noticed</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Award className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Course Completion Certificate</p>
+                          <p className="text-xs text-muted-foreground">Recognized industry certificate</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-green-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹12,999</p>
+                      <button className="w-full py-2 rounded-lg bg-green-500/10 text-green-600 dark:text-green-400 font-semibold hover:bg-green-500/20 transition-all border border-green-500/20">
+                        Explore Foundation Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+
+                {/* Professional Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <GlassCard className="p-6 border-2 border-blue-500/30 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 relative h-full hover:scale-105 transition-transform duration-300">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-xs font-semibold shadow-lg">
+                      ⭐⭐ MOST POPULAR
+                    </div>
+                    <div className="mb-4 mt-2">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-blue-500 text-white text-xs font-semibold">⭐⭐ PROFESSIONAL</span>
+                        <span className="text-xs text-muted-foreground">6 Months • 60 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-blue-500/10 rounded-lg border border-blue-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">2–3 live classes per week • Total: 60 live classes</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: Job seekers, fresh graduates, skill-builders (60–70% choose this)</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Everything in Foundation PLUS:</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Code className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">10+ Advanced Projects</p>
+                          <p className="text-xs text-muted-foreground">Major backend + AI integration projects with real-world applications</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Users className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Weekly Live Doubt-Clearing</p>
+                          <p className="text-xs text-muted-foreground">Get instant help from expert instructors</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Target className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Interview Preparation</p>
+                          <p className="text-xs text-muted-foreground">Technical & HR mock interviews with feedback</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Globe className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Full Portfolio Website</p>
+                          <p className="text-xs text-muted-foreground">Hosted professional portfolio showcasing all projects</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Linkedin className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Complete Profile Makeover</p>
+                          <p className="text-xs text-muted-foreground">LinkedIn + GitHub + Job portals (Naukri, Indeed, Foundit)</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <BookOpen className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Soft-Skills Training</p>
+                          <p className="text-xs text-muted-foreground">Communication, presentation, and professional skills</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Calendar className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">1-Year LMS Access</p>
+                          <p className="text-xs text-muted-foreground">Access all materials, recordings, and resources</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-blue-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹24,999</p>
+                      <button className="w-full py-2 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all shadow-lg">
+                        Explore Professional Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+
+                {/* Mastery Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <GlassCard className="p-6 border-2 border-orange-500/30 bg-gradient-to-br from-orange-500/5 to-red-500/5 h-full hover:scale-105 transition-transform duration-300">
+                    <div className="mb-4">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-orange-500 text-white text-xs font-semibold">⭐⭐⭐ MASTERY</span>
+                        <span className="text-xs text-muted-foreground">8 Months • 96 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-orange-500/10 rounded-lg border border-orange-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">3 live classes per week • Total: 96 live classes</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: Serious job seekers, parents ready to invest, students aiming for top placements</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Everything in Professional PLUS:</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Briefcase className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">2–3 Month Internship</p>
+                          <p className="text-xs text-muted-foreground">Real work experience with internship letter</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Users className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Dedicated Project Mentor</p>
+                          <p className="text-xs text-muted-foreground">1-on-1 mentoring sessions every week</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Code className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">3 Capstone AI Projects</p>
+                          <p className="text-xs text-muted-foreground">Industry-grade projects for your portfolio</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Globe className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Complete Portfolio Development</p>
+                          <p className="text-xs text-muted-foreground">GitHub + Website with project showreel</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Rocket className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Premium Job Assistance</p>
+                          <p className="text-xs text-muted-foreground">Placement tracking & recruiter connections</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Zap className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Priority Doubt-Solving</p>
+                          <p className="text-xs text-muted-foreground">Fast-track support for all your questions</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Award className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Lifetime LMS Access</p>
+                          <p className="text-xs text-muted-foreground">Access to premium workshops & updates</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Lightbulb className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">AI Startup Project Mentoring</p>
+                          <p className="text-xs text-muted-foreground">Build your own AI-powered startup project</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-orange-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹49,999</p>
+                      <button className="w-full py-2 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg">
+                        Explore Mastery Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+              </div>
+            </div>
+
+            {/* Detailed Course Information - Expandable Section */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="mt-8"
+            >
+              <GlassCard className="p-8 overflow-hidden">
+                <div className="relative h-64 w-full rounded-xl overflow-hidden mb-8">
+                  <Image
+                    src="/assest/ai tools.jpg"
+                    alt="AI + ML + Full-Stack Development"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 100vw"
+                    quality={90}
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6 text-white">
+                    <h4 className="text-2xl font-bold mb-2">AI + ML + Full-Stack Development Program</h4>
+                    <p className="text-blue-200">Career-transforming training to become a full-stack developer with AI superpowers</p>
+                  </div>
+                </div>
+
+                {/* Course Overview */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
+                  <button
+                    onClick={() => toggleSection('course1-overview')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-blue-500/10 to-cyan-500/10 hover:from-blue-500/20 hover:to-cyan-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Star className="h-5 w-5 text-blue-500" />
+                      <h4 className="text-xl font-bold font-heading">Course Overview</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course1-overview'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course1-overview'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl space-y-4">
+                          <p className="text-muted-foreground leading-relaxed">
+                            The <strong>AI + ML + Full-Stack Development Program</strong> is a career-transforming, hands-on training designed to help you become a full-stack developer with AI superpowers. You will build real-world applications by combining:
+                          </p>
+                          <ul className="grid md:grid-cols-2 gap-3 list-disc list-inside text-muted-foreground">
+                            <li>Frontend + Backend Development</li>
+                            <li>Machine Learning & Generative AI</li>
+                            <li>Cloud Deployment</li>
+                            <li>Software Engineering Skills</li>
+                          </ul>
+                          <p className="text-muted-foreground leading-relaxed">
+                            This program transforms beginners into job-ready professionals through <strong>Weekly LIVE classes</strong>, <strong>Industry projects</strong>, <strong>Mentorship</strong>, <strong>Career guidance</strong>, <strong>Portfolio publishing</strong>, and <strong>Interview preparation</strong>.
+                          </p>
+                          <p className="text-muted-foreground font-semibold text-foreground">
+                            If you want to build real apps, create powerful AI projects, and launch a strong tech career, this is your perfect program.
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Who Is This Program For */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course1-who')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-purple-500/10 to-pink-500/10 hover:from-purple-500/20 hover:to-pink-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <UserCheck className="h-5 w-5 text-purple-500" />
+                      <h4 className="text-xl font-bold font-heading">Who Is This Program For?</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course1-who'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course1-who'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">This course is ideal for:</p>
+                          <div className="grid md:grid-cols-2 gap-3">
+                            {[
+                              'Students (Diploma / B.Tech / Degree)',
+                              'Freshers looking for their first tech job',
+                              'Working professionals switching careers',
+                              'AI & Full-Stack enthusiasts',
+                              'Job seekers who want a high-paying tech role',
+                              'Anyone who wants to build real AI-powered apps'
+                            ].map((item, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <CheckCircle className="h-5 w-5 text-purple-500 flex-shrink-0 mt-0.5" />
+                                <span className="text-muted-foreground">{item}</span>
+                              </div>
+                            ))}
+                          </div>
+                          <p className="text-muted-foreground mt-4 font-semibold text-foreground">
+                            ✅ No prior coding experience required — we start from basics and take you to expert level.
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* What You Will Learn */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course1-learn')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-cyan-500/10 to-blue-500/10 hover:from-cyan-500/20 hover:to-blue-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <BookOpen className="h-5 w-5 text-cyan-500" />
+                      <h4 className="text-xl font-bold font-heading">What You Will Learn</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course1-learn'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course1-learn'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl space-y-6">
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Code className="h-4 w-4 text-blue-500" />
+                              Core Full-Stack Development
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['HTML, CSS, JavaScript', 'React.js + Tailwind', 'Node.js, Express.js', 'MongoDB', 'Authentication & APIs', 'Git & GitHub'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-blue-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Brain className="h-4 w-4 text-purple-500" />
+                              Artificial Intelligence
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Python + ML Algorithms', 'Generative AI', 'Fine-tuning LLMs', 'Chatbots + Vision AI', 'AI-powered Apps'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Cloud className="h-4 w-4 text-cyan-500" />
+                              Cloud & Deployment
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Hosting on Vercel / Netlify', 'Backend deployment', 'Cloud storage', 'API integrations'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-cyan-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Target className="h-4 w-4 text-orange-500" />
+                              Professional Skills
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Writing clean code', 'Debugging', 'Documentation', 'Agile development'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* What You Will Build */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course1-build')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 hover:from-green-500/20 hover:to-emerald-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Rocket className="h-5 w-5 text-green-500" />
+                      <h4 className="text-xl font-bold font-heading">What You Will Build</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course1-build'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course1-build'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">You will build more than <strong className="text-foreground">15 real-world projects</strong>, including:</p>
+                          <div className="grid md:grid-cols-2 gap-3">
+                            {[
+                              'AI chatbot',
+                              'E-commerce MERN app',
+                              'Machine learning prediction model',
+                              'Full-stack login system',
+                              'Portfolio website',
+                              'AI image generator',
+                              'API-based apps',
+                              'Cloud-deployed applications',
+                              '3 major capstone projects (Mastery Program)'
+                            ].map((project, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <span className="text-green-500 font-bold">🔹</span>
+                                <span className="text-muted-foreground">{project}</span>
+                              </div>
+                            ))}
+                          </div>
+                          <p className="text-muted-foreground mt-4 font-semibold text-foreground">
+                            These projects become the core of your career portfolio.
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Career Services */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course1-career')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-orange-500/10 to-red-500/10 hover:from-orange-500/20 hover:to-red-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Briefcase className="h-5 w-5 text-orange-500" />
+                      <h4 className="text-xl font-bold font-heading">Career Services Included</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course1-career'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course1-career'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4 font-semibold text-foreground">
+                            Every CodeKids student receives (For ALL Tracks — Foundation, Professional, Mastery):
+                          </p>
+                          <div className="grid md:grid-cols-2 gap-3 mb-4">
+                            {[
+                              'Resume (done-for-you)',
+                              'Hosted portfolio website',
+                              'LinkedIn optimization',
+                              'GitHub optimization',
+                              'Job portal setup (Naukri, Indeed, Foundit…)',
+                              'Professional self-intro video creation',
+                              'Interview preparation',
+                              'Soft skills training',
+                              'Career roadmap'
+                            ].map((service, idx) => (
+                              <div key={idx} className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                <span className="text-muted-foreground">{service}</span>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="p-4 bg-orange-500/10 rounded-lg border border-orange-500/20">
+                            <p className="font-semibold text-foreground mb-2">Mastery Program adds:</p>
+                            <div className="space-y-2">
+                              {['Internship', 'Weekly mentorship', 'Placement tracking', 'Recruiter connections'].map((item, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <Star className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{item}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Career Outcomes */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.5 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course1-outcomes')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-indigo-500/10 to-purple-500/10 hover:from-indigo-500/20 hover:to-purple-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <TrendingUp className="h-5 w-5 text-indigo-500" />
+                      <h4 className="text-xl font-bold font-heading">Career Outcomes</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course1-outcomes'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course1-outcomes'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">After completing this program, you can become:</p>
+                          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                            {[
+                              'Full-Stack Developer',
+                              'AI Developer',
+                              'ML Engineer',
+                              'Software Engineer',
+                              'GenAI App Developer',
+                              'Backend Developer',
+                              'Automation Engineer',
+                              'Cloud Web Developer'
+                            ].map((role, idx) => (
+                              <div key={idx} className="flex items-center gap-2 p-3 rounded-lg bg-indigo-500/5 border border-indigo-500/10">
+                                <ArrowRight className="h-4 w-4 text-indigo-500 flex-shrink-0" />
+                                <span className="text-muted-foreground font-medium">{role}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              </GlassCard>
+            </motion.div>
+          </motion.div>
+
+          {/* Course 2: Data Science + Data Engineering + GenAI */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-20"
+          >
+            <div className="flex items-center gap-3 mb-8">
+              <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-500 flex items-center justify-center">
+                <Database className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold font-heading">🟥 2️⃣ DATA SCIENCE + DATA ENGINEERING + GENAI</h3>
+                <p className="text-sm text-muted-foreground">Fastest placement, high admissions course</p>
+              </div>
+            </div>
+            {/* Program Pathways - Focus on Value, Not Pricing */}
+            <div className="mb-12">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-8"
+              >
+                <h4 className="text-2xl md:text-3xl font-bold font-heading mb-3">
+                  Choose Your <span className="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">Learning Path</span>
+                </h4>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Choose from industry-level programs designed to transform you into a complete data professional
+                </p>
+              </motion.div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                {/* Foundation Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <GlassCard className="p-6 border-2 border-green-500/30 bg-gradient-to-br from-green-500/5 to-emerald-500/5 h-full hover:scale-105 transition-transform duration-300">
+                    <div className="mb-4">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-green-500 text-white text-xs font-semibold">⭐ FOUNDATION</span>
+                        <span className="text-xs text-muted-foreground">3 Months • 24 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-green-500/10 rounded-lg border border-green-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">2 live classes per week → 24 live classes</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: Beginners & students starting their data journey</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Live + Recorded Classes</p>
+                          <p className="text-xs text-muted-foreground">Learn Python + SQL basics with full access</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Database className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">2 Beginner Data Projects</p>
+                          <p className="text-xs text-muted-foreground">Hands-on practice with real datasets</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <FileText className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Resume Creation</p>
+                          <p className="text-xs text-muted-foreground">Professional resume done for you</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Globe className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Starter Portfolio</p>
+                          <p className="text-xs text-muted-foreground">Showcase your initial projects</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Linkedin className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">LinkedIn & GitHub Starter Setup</p>
+                          <p className="text-xs text-muted-foreground">Basic optimization to get started</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Award className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Course Completion Certificate</p>
+                          <p className="text-xs text-muted-foreground">Recognized industry certificate</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-green-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹9,999</p>
+                      <button className="w-full py-2 rounded-lg bg-green-500/10 text-green-600 dark:text-green-400 font-semibold hover:bg-green-500/20 transition-all border border-green-500/20">
+                        Explore Foundation Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+
+                {/* Professional Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <GlassCard className="p-6 border-2 border-blue-500/30 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 relative h-full hover:scale-105 transition-transform duration-300">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-xs font-semibold shadow-lg">
+                      ⭐⭐ MOST POPULAR
+                    </div>
+                    <div className="mb-4 mt-2">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-blue-500 text-white text-xs font-semibold">⭐⭐ PROFESSIONAL</span>
+                        <span className="text-xs text-muted-foreground">5 Months • 48 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-blue-500/10 rounded-lg border border-blue-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">2–3 live classes per week → 48 live classes</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: Data career seekers & freshers preparing for placements</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Everything in Foundation PLUS:</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Database className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">6 Real Data Projects</p>
+                          <p className="text-xs text-muted-foreground">Python, SQL, ML, Power BI with industry datasets</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Server className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">ETL Pipeline Projects</p>
+                          <p className="text-xs text-muted-foreground">Build end-to-end data engineering pipelines</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <BarChart3 className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Power BI Dashboards</p>
+                          <p className="text-xs text-muted-foreground">Create business intelligence dashboards</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Code className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">ML Model Building</p>
+                          <p className="text-xs text-muted-foreground">Build and deploy machine learning models</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Target className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Job-Oriented Training</p>
+                          <p className="text-xs text-muted-foreground">Resume building, mock interviews, placement prep</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Globe className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Full Portfolio Website</p>
+                          <p className="text-xs text-muted-foreground">Hosted professional portfolio</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Linkedin className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Complete Profile Makeover</p>
+                          <p className="text-xs text-muted-foreground">LinkedIn + GitHub + Job portals optimization</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Calendar className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">1-Year LMS Access</p>
+                          <p className="text-xs text-muted-foreground">Access all materials and resources</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-blue-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹19,999</p>
+                      <button className="w-full py-2 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all shadow-lg">
+                        Explore Professional Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+
+                {/* Mastery Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <GlassCard className="p-6 border-2 border-orange-500/30 bg-gradient-to-br from-orange-500/5 to-red-500/5 h-full hover:scale-105 transition-transform duration-300">
+                    <div className="mb-4">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-orange-500 text-white text-xs font-semibold">⭐⭐⭐ MASTERY</span>
+                        <span className="text-xs text-muted-foreground">7 Months • 84 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-orange-500/10 rounded-lg border border-orange-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">3 live classes per week → 84 live classes</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: Serious aspirants targeting top data roles</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Everything in Professional PLUS:</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Briefcase className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">2–3 Month Internship</p>
+                          <p className="text-xs text-muted-foreground">Real work experience with internship letter</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Cloud className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Cloud Labs (GCP/AWS)</p>
+                          <p className="text-xs text-muted-foreground">Hands-on practice with BigQuery / Snowflake</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Brain className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Advanced ML + GenAI Case Studies</p>
+                          <p className="text-xs text-muted-foreground">Industry-grade AI projects</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Users className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Weekly 1-on-1 Mentorship</p>
+                          <p className="text-xs text-muted-foreground">Personalized guidance from experts</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Globe className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Portfolio Creation</p>
+                          <p className="text-xs text-muted-foreground">Complete portfolio with project showreel</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Rocket className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Placement Ecosystem Access</p>
+                          <p className="text-xs text-muted-foreground">Career tracking & recruiter connections</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Zap className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Priority Doubt-Solving</p>
+                          <p className="text-xs text-muted-foreground">Fast-track support for all questions</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Target className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Pre-Placement Evaluation</p>
+                          <p className="text-xs text-muted-foreground">Comprehensive assessment before job search</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-orange-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹39,999</p>
+                      <button className="w-full py-2 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg">
+                        Explore Mastery Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+              </div>
+            </div>
+
+            {/* Detailed Course Information - Expandable Section */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="mt-8"
+            >
+              <GlassCard className="p-8 overflow-hidden">
+                <div className="relative h-64 w-full rounded-xl overflow-hidden mb-8">
+                  <Image
+                    src="/assest/data science.jpg"
+                    alt="Data Science + Data Engineering + GenAI"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 100vw"
+                    quality={90}
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6 text-white">
+                    <h4 className="text-2xl font-bold mb-2">Data Science + Data Engineering + GenAI Program</h4>
+                    <p className="text-blue-200">Full-spectrum career accelerator to become a complete data professional</p>
+                  </div>
+                </div>
+
+                {/* Course Overview */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
+                  <button
+                    onClick={() => toggleSection('course2-overview')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-indigo-500/10 to-purple-500/10 hover:from-indigo-500/20 hover:to-purple-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Star className="h-5 w-5 text-indigo-500" />
+                      <h4 className="text-xl font-bold font-heading">Course Overview</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course2-overview'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course2-overview'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl space-y-4">
+                          <p className="text-muted-foreground leading-relaxed">
+                            The <strong>Data Science + Data Engineering + GenAI Program</strong> is a full-spectrum career accelerator designed to turn you into a complete data professional—someone who can analyze data, build ML models, design pipelines, and integrate GenAI.
+                          </p>
+                          <p className="text-muted-foreground font-semibold text-foreground mb-3">You will master:</p>
+                          <ul className="grid md:grid-cols-2 gap-3 list-disc list-inside text-muted-foreground">
+                            <li>Python + Data Analysis</li>
+                            <li>Machine Learning + GenAI</li>
+                            <li>Power BI + Dashboards</li>
+                            <li>Cloud-based Data Engineering</li>
+                            <li>ETL Pipelines & Big Data Tools</li>
+                          </ul>
+                          <p className="text-muted-foreground leading-relaxed mt-4">
+                            The program transforms beginners into job-ready <strong>Data Analysts</strong>, <strong>Data Scientists</strong>, and <strong>Data Engineers</strong> through <strong>Weekly LIVE classes</strong>, <strong>Real datasets & industry projects</strong>, <strong>Mentorship</strong>, <strong>Portfolio publishing</strong>, <strong>Resume, LinkedIn & job portal optimization</strong>, and <strong>Interview preparation</strong>.
+                          </p>
+                          <p className="text-muted-foreground font-semibold text-foreground">
+                            If you want a high-paying data career, this program is your fast track.
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Who Is This Program For */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course2-who')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-purple-500/10 to-pink-500/10 hover:from-purple-500/20 hover:to-pink-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <UserCheck className="h-5 w-5 text-purple-500" />
+                      <h4 className="text-xl font-bold font-heading">Who Is This Program For?</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course2-who'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course2-who'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">Perfect for:</p>
+                          <div className="grid md:grid-cols-2 gap-3">
+                            {[
+                              'Diploma, Degree & B.Tech students',
+                              'Freshers preparing for data careers',
+                              'Professionals switching to data',
+                              'Aspiring Data Analysts',
+                              'Beginners interested in AI & ML',
+                              'Job seekers building a strong portfolio'
+                            ].map((item, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <CheckCircle className="h-5 w-5 text-purple-500 flex-shrink-0 mt-0.5" />
+                                <span className="text-muted-foreground">{item}</span>
+                              </div>
+                            ))}
+                          </div>
+                          <p className="text-muted-foreground mt-4 font-semibold text-foreground">
+                            ✅ No prior coding knowledge needed — we start from zero.
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* What You Will Learn */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course2-learn')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-indigo-500/10 to-cyan-500/10 hover:from-indigo-500/20 hover:to-cyan-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <BookOpen className="h-5 w-5 text-indigo-500" />
+                      <h4 className="text-xl font-bold font-heading">What You Will Learn</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course2-learn'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course2-learn'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl space-y-6">
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Database className="h-4 w-4 text-indigo-500" />
+                              Core Data Science
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Python for Data', 'Numpy, Pandas', 'Data Cleaning & Preprocessing', 'Exploratory Data Analysis', 'Data Visualization (Matplotlib, Seaborn)'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-indigo-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Brain className="h-4 w-4 text-purple-500" />
+                              Machine Learning & GenAI
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Classification & Regression Models', 'Clustering & Recommendation Models', 'Feature Engineering', 'Generative AI for Data', 'AI-powered insights', 'AutoML tools'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Server className="h-4 w-4 text-cyan-500" />
+                              Data Engineering
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['SQL Mastery', 'ETL Pipelines', 'Airflow Basics', 'Cloud Data Tools (AWS/GCP)', 'Data Warehousing (BigQuery/Snowflake)'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-cyan-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <BarChart3 className="h-4 w-4 text-blue-500" />
+                              Analytics & BI
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Power BI', 'Dashboard design', 'KPI & business reporting'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-blue-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Target className="h-4 w-4 text-orange-500" />
+                              Professional Skills
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Data storytelling', 'Documentation', 'Portfolio case study writing'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <p className="text-muted-foreground mt-4 font-semibold text-foreground text-center p-4 bg-indigo-500/10 rounded-lg border border-indigo-500/20">
+                            You become a complete modern data professional.
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* What You Will Build */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course2-build')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 hover:from-green-500/20 hover:to-emerald-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Rocket className="h-5 w-5 text-green-500" />
+                      <h4 className="text-xl font-bold font-heading">What You Will Build</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course2-build'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course2-build'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">You will build comprehensive data projects, including:</p>
+                          <div className="grid md:grid-cols-2 gap-3">
+                            {[
+                              'Sales dashboard',
+                              'HR analytics dashboard',
+                              'ML prediction models',
+                              'Recommendation system',
+                              'ETL pipeline',
+                              'BigQuery cloud data warehouse',
+                              'Data storytelling project',
+                              'Power BI business dashboard',
+                              'GenAI-powered analytics tool',
+                              '3 major capstone projects (Mastery Program)'
+                            ].map((project, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <span className="text-green-500 font-bold">🔹</span>
+                                <span className="text-muted-foreground">{project}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Career Services */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course2-career')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-orange-500/10 to-red-500/10 hover:from-orange-500/20 hover:to-red-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Briefcase className="h-5 w-5 text-orange-500" />
+                      <h4 className="text-xl font-bold font-heading">Career Services Included</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course2-career'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course2-career'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4 font-semibold text-foreground">
+                            Every CodeKids student receives:
+                          </p>
+                          <div className="grid md:grid-cols-2 gap-3 mb-4">
+                            {[
+                              'Resume created for you',
+                              'Hosted portfolio website',
+                              'LinkedIn optimization',
+                              'GitHub optimization',
+                              'Job portal setup (Naukri, Foundit, Indeed…)',
+                              'Professional intro video',
+                              'HR + Technical interview prep',
+                              'Soft skills training',
+                              'Career roadmap'
+                            ].map((service, idx) => (
+                              <div key={idx} className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                <span className="text-muted-foreground">{service}</span>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="p-4 bg-orange-500/10 rounded-lg border border-orange-500/20">
+                            <p className="font-semibold text-foreground mb-2">Mastery Program adds:</p>
+                            <div className="space-y-2">
+                              {['Internship', 'Weekly mentorship', 'Placement support', 'Recruiter connections'].map((item, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <Star className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{item}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Career Outcomes */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.5 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course2-outcomes')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-pink-500/10 to-rose-500/10 hover:from-pink-500/20 hover:to-rose-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <TrendingUp className="h-5 w-5 text-pink-500" />
+                      <h4 className="text-xl font-bold font-heading">Career Outcomes</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course2-outcomes'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course2-outcomes'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">After completing this program, you can become:</p>
+                          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                            {[
+                              'Data Analyst',
+                              'Data Scientist',
+                              'Data Engineer',
+                              'ML Engineer',
+                              'BI Analyst',
+                              'Analytics Engineer',
+                              'AI Specialist'
+                            ].map((role, idx) => (
+                              <div key={idx} className="flex items-center gap-2 p-3 rounded-lg bg-pink-500/5 border border-pink-500/10">
+                                <ArrowRight className="h-4 w-4 text-pink-500 flex-shrink-0" />
+                                <span className="text-muted-foreground font-medium">{role}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              </GlassCard>
+            </motion.div>
+          </motion.div>
+
+          {/* Course 3: Cybersecurity + Cloud + AI Security */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-20"
+          >
+            <div className="flex items-center gap-3 mb-8">
+              <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-green-600 to-teal-500 flex items-center justify-center">
+                <Shield className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold font-heading">🛡 3️⃣ CYBERSECURITY + CLOUD + AI SECURITY</h3>
+                <p className="text-sm text-muted-foreground">High-salary roles + niche skills</p>
+              </div>
+            </div>
+            {/* Program Pathways - Focus on Value, Not Pricing */}
+            <div className="mb-12">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-8"
+              >
+                <h4 className="text-2xl md:text-3xl font-bold font-heading mb-3">
+                  Choose Your <span className="bg-gradient-to-r from-green-500 to-teal-500 bg-clip-text text-transparent">Learning Path</span>
+                </h4>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Choose from industry-level programs designed for high-paying cybersecurity roles
+                </p>
+              </motion.div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                {/* Foundation Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <GlassCard className="p-6 border-2 border-green-500/30 bg-gradient-to-br from-green-500/5 to-emerald-500/5 h-full hover:scale-105 transition-transform duration-300">
+                    <div className="mb-4">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-green-500 text-white text-xs font-semibold">⭐ FOUNDATION</span>
+                        <span className="text-xs text-muted-foreground">3.5 Months • 28 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-green-500/10 rounded-lg border border-green-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">2 live classes per week → 28 live classes</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: Starters in cybersecurity</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Live Classes</p>
+                          <p className="text-xs text-muted-foreground">Learn cybersecurity fundamentals</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Terminal className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Linux + Networking Basics</p>
+                          <p className="text-xs text-muted-foreground">Essential skills for security professionals</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Shield className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Kali Linux Setup</p>
+                          <p className="text-xs text-muted-foreground">Tool setup for ethical hacking</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Lock className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">2 Beginner Security Labs</p>
+                          <p className="text-xs text-muted-foreground">Basic ethical hacking tasks</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <FileText className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Resume Creation</p>
+                          <p className="text-xs text-muted-foreground">Professional resume done for you</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Linkedin className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">LinkedIn Starter Setup</p>
+                          <p className="text-xs text-muted-foreground">Basic optimization to get started</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Award className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Course Completion Certificate</p>
+                          <p className="text-xs text-muted-foreground">Recognized industry certificate</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-green-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹14,999</p>
+                      <button className="w-full py-2 rounded-lg bg-green-500/10 text-green-600 dark:text-green-400 font-semibold hover:bg-green-500/20 transition-all border border-green-500/20">
+                        Explore Foundation Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+
+                {/* Professional Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <GlassCard className="p-6 border-2 border-blue-500/30 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 relative h-full hover:scale-105 transition-transform duration-300">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-xs font-semibold shadow-lg">
+                      ⭐⭐ MOST POPULAR
+                    </div>
+                    <div className="mb-4 mt-2">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-blue-500 text-white text-xs font-semibold">⭐⭐ PROFESSIONAL</span>
+                        <span className="text-xs text-muted-foreground">5 Months • 50 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-blue-500/10 rounded-lg border border-blue-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">2–3 live classes per week → 50 live classes</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: Job seekers entering cybersecurity roles</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Everything in Foundation PLUS:</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Shield className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">SOC Training</p>
+                          <p className="text-xs text-muted-foreground">Ethical hacking + Security Operations Center</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Server className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">SIEM Tools (Splunk/Azure Sentinel)</p>
+                          <p className="text-xs text-muted-foreground">Security Information and Event Management</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Lock className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">6 Hands-On Labs</p>
+                          <p className="text-xs text-muted-foreground">Real attack & defense simulations</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Cloud className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Cloud Security Foundations</p>
+                          <p className="text-xs text-muted-foreground">AWS/Azure security basics</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Users className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Weekly Live Doubt Sessions</p>
+                          <p className="text-xs text-muted-foreground">Get instant help from expert instructors</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Globe className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Full Hosted Cyber Portfolio</p>
+                          <p className="text-xs text-muted-foreground">Showcase your security projects</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Target className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Job Portal Optimization</p>
+                          <p className="text-xs text-muted-foreground">Resume building, mock interviews, placement prep</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Calendar className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">1-Year LMS Access</p>
+                          <p className="text-xs text-muted-foreground">Access all materials and resources</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-blue-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹29,999</p>
+                      <button className="w-full py-2 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all shadow-lg">
+                        Explore Professional Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+
+                {/* Mastery Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <GlassCard className="p-6 border-2 border-orange-500/30 bg-gradient-to-br from-orange-500/5 to-red-500/5 h-full hover:scale-105 transition-transform duration-300">
+                    <div className="mb-4">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-orange-500 text-white text-xs font-semibold">⭐⭐⭐ MASTERY</span>
+                        <span className="text-xs text-muted-foreground">7 Months • 84 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-orange-500/10 rounded-lg border border-orange-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">3 live classes per week → 84 live classes</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: High-paying cybersecurity job roles</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Everything in Professional PLUS:</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Briefcase className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">SOC Internship Simulation</p>
+                          <p className="text-xs text-muted-foreground">Real work experience with internship letter</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Cloud className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">AWS Cloud Security Labs</p>
+                          <p className="text-xs text-muted-foreground">Advanced cloud security practices</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Brain className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">AI Threat Detection Tools</p>
+                          <p className="text-xs text-muted-foreground">AI-powered security automation</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Shield className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Red-Team/Blue-Team Practicals</p>
+                          <p className="text-xs text-muted-foreground">Advanced attack & defense scenarios</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Users className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Weekly 1-on-1 Mentorship</p>
+                          <p className="text-xs text-muted-foreground">Personalized guidance from experts</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Rocket className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Placement Guarantee Track</p>
+                          <p className="text-xs text-muted-foreground">Career tracking & recruiter connections</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Award className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Lifetime Access</p>
+                          <p className="text-xs text-muted-foreground">Access to premium workshops & updates</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Target className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Pre-Placement Evaluation</p>
+                          <p className="text-xs text-muted-foreground">Comprehensive assessment before job search</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-orange-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹49,999</p>
+                      <button className="w-full py-2 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg">
+                        Explore Mastery Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+              </div>
+            </div>
+
+            {/* Detailed Course Information - Expandable Section */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="mt-8"
+            >
+              <GlassCard className="p-8 overflow-hidden">
+                <div className="relative h-64 w-full rounded-xl overflow-hidden mb-8">
+                  <Image
+                    src="/assest/preparation.jpg"
+                    alt="Cybersecurity + Cloud + AI Security"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 100vw"
+                    quality={90}
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6 text-white">
+                    <h4 className="text-2xl font-bold mb-2">Cybersecurity + Cloud + AI Security Program</h4>
+                    <p className="text-blue-200">Transform into cybersecurity professionals ready to protect systems and secure cloud environments</p>
+                  </div>
+                </div>
+
+                {/* Course Overview */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
+                  <button
+                    onClick={() => toggleSection('course3-overview')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-green-500/10 to-teal-500/10 hover:from-green-500/20 hover:to-teal-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Star className="h-5 w-5 text-green-500" />
+                      <h4 className="text-xl font-bold font-heading">Course Overview</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course3-overview'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course3-overview'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl space-y-4">
+                          <p className="text-muted-foreground leading-relaxed">
+                            This program transforms beginners into <strong>cybersecurity professionals</strong> ready to protect systems, detect threats, and secure cloud environments using both traditional and AI-driven tools.
+                          </p>
+                          <p className="text-muted-foreground font-semibold text-foreground mb-3">You will learn:</p>
+                          <ul className="grid md:grid-cols-2 gap-3 list-disc list-inside text-muted-foreground">
+                            <li>Ethical Hacking</li>
+                            <li>SOC Operations & SIEM Tools</li>
+                            <li>Cloud Security (AWS/Azure)</li>
+                            <li>Threat Detection using AI</li>
+                            <li>Linux + Networking + Scripting</li>
+                          </ul>
+                          <p className="text-muted-foreground leading-relaxed mt-4">
+                            It is designed for students aiming for high-paying cybersecurity roles, with <strong>LIVE labs</strong>, <strong>Real attack & defense simulations</strong>, <strong>Internship (Mastery)</strong>, <strong>Resume + LinkedIn + GitHub setup</strong>, and <strong>Cyber portfolio publishing</strong>.
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Who Is This Program For */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course3-who')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-teal-500/10 to-cyan-500/10 hover:from-teal-500/20 hover:to-cyan-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <UserCheck className="h-5 w-5 text-teal-500" />
+                      <h4 className="text-xl font-bold font-heading">Who Is This Program For?</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course3-who'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course3-who'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">Perfect for:</p>
+                          <div className="grid md:grid-cols-2 gap-3">
+                            {[
+                              'Students interested in cybersecurity',
+                              'Beginners with zero experience',
+                              'Freshers wanting to enter cyber roles',
+                              'IT support engineers',
+                              'Network students',
+                              'Anyone who wants a future-proof career in security'
+                            ].map((item, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <CheckCircle className="h-5 w-5 text-teal-500 flex-shrink-0 mt-0.5" />
+                                <span className="text-muted-foreground">{item}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* What You Will Learn */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course3-learn')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-emerald-500/10 to-green-500/10 hover:from-emerald-500/20 hover:to-green-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <BookOpen className="h-5 w-5 text-emerald-500" />
+                      <h4 className="text-xl font-bold font-heading">What You Will Learn</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course3-learn'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course3-learn'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl space-y-6">
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Shield className="h-4 w-4 text-green-500" />
+                              Core Cybersecurity
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Ethical hacking', 'Vulnerability analysis', 'Kali Linux', 'Network scanning', 'Web security'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Eye className="h-4 w-4 text-cyan-500" />
+                              SOC Operations
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['SIEM tools (Splunk, Sentinel)', 'Log analysis', 'Threat hunting', 'Incident response'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-cyan-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Cloud className="h-4 w-4 text-blue-500" />
+                              Cloud Security
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['IAM', 'S3 security', 'Cloud monitoring', 'Cloud-based attack simulation'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-blue-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Brain className="h-4 w-4 text-purple-500" />
+                              AI Security
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['AI-powered threat detection', 'Automated security testing', 'Threat intelligence'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <FileText className="h-4 w-4 text-orange-500" />
+                              Professional Skills
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Report writing', 'Cyber documentation', 'SOC reporting templates'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* What You Will Build */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course3-build')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 hover:from-green-500/20 hover:to-emerald-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Rocket className="h-5 w-5 text-green-500" />
+                      <h4 className="text-xl font-bold font-heading">What You Will Build</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course3-build'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course3-build'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">You will build comprehensive cybersecurity projects, including:</p>
+                          <div className="grid md:grid-cols-2 gap-3">
+                            {[
+                              'SOC analysis reports',
+                              'SIEM dashboards',
+                              'Penetration testing labs',
+                              'Cloud security project',
+                              'Threat detection using AI',
+                              'Red/blue team simulations',
+                              'Automation scripts',
+                              'Cybersecurity portfolio',
+                              '3 advanced capstone projects'
+                            ].map((project, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <span className="text-green-500 font-bold">🔹</span>
+                                <span className="text-muted-foreground">{project}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Career Services */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course3-career')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-orange-500/10 to-red-500/10 hover:from-orange-500/20 hover:to-red-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Briefcase className="h-5 w-5 text-orange-500" />
+                      <h4 className="text-xl font-bold font-heading">Career Services Included</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course3-career'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course3-career'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4 font-semibold text-foreground">
+                            Every CodeKids student receives:
+                          </p>
+                          <div className="grid md:grid-cols-2 gap-3 mb-4">
+                            {[
+                              'Resume created for you',
+                              'Hosted cyber portfolio website',
+                              'LinkedIn optimization',
+                              'GitHub optimization',
+                              'Job portal setup (Naukri, Foundit, Indeed…)',
+                              'Professional intro video',
+                              'HR + Technical interview prep',
+                              'Soft skills training',
+                              'Career roadmap'
+                            ].map((service, idx) => (
+                              <div key={idx} className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                <span className="text-muted-foreground">{service}</span>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="p-4 bg-orange-500/10 rounded-lg border border-orange-500/20">
+                            <p className="font-semibold text-foreground mb-2">Mastery Program adds:</p>
+                            <div className="space-y-2">
+                              {['SOC internship simulation', 'Weekly mentorship', 'Placement ecosystem access', 'Recruiter connections'].map((item, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <Star className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{item}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Career Outcomes */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.5 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course3-outcomes')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-teal-500/10 to-cyan-500/10 hover:from-teal-500/20 hover:to-cyan-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <TrendingUp className="h-5 w-5 text-teal-500" />
+                      <h4 className="text-xl font-bold font-heading">Career Outcomes</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course3-outcomes'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course3-outcomes'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">After completing this program, you can become:</p>
+                          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                            {[
+                              'SOC Analyst',
+                              'Cybersecurity Analyst',
+                              'Ethical Hacker',
+                              'Cloud Security Analyst',
+                              'Security Operations Engineer',
+                              'Incident Response Specialist'
+                            ].map((role, idx) => (
+                              <div key={idx} className="flex items-center gap-2 p-3 rounded-lg bg-teal-500/5 border border-teal-500/10">
+                                <ArrowRight className="h-4 w-4 text-teal-500 flex-shrink-0" />
+                                <span className="text-muted-foreground font-medium">{role}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              </GlassCard>
+            </motion.div>
+          </motion.div>
+
+          {/* Course 4: UI/UX + Digital Marketing + AI Tools */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-20"
+          >
+            <div className="flex items-center gap-3 mb-8">
+              <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-pink-600 to-rose-500 flex items-center justify-center">
+                <Palette className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold font-heading">🎨 4️⃣ UI/UX + DIGITAL MARKETING + AI TOOLS</h3>
+                <p className="text-sm text-muted-foreground">Creative, beginner-friendly, high admission</p>
+              </div>
+            </div>
+            {/* Program Pathways - Focus on Value, Not Pricing */}
+            <div className="mb-12">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-8"
+              >
+                <h4 className="text-2xl md:text-3xl font-bold font-heading mb-3">
+                  Choose Your <span className="bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">Learning Path</span>
+                </h4>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Choose from industry-level programs designed for creative & marketing careers
+                </p>
+              </motion.div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                {/* Foundation Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <GlassCard className="p-6 border-2 border-green-500/30 bg-gradient-to-br from-green-500/5 to-emerald-500/5 h-full hover:scale-105 transition-transform duration-300">
+                    <div className="mb-4">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-green-500 text-white text-xs font-semibold">⭐ FOUNDATION</span>
+                        <span className="text-xs text-muted-foreground">2.5 Months • 20 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-green-500/10 rounded-lg border border-green-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">2 live classes per week → 20 live classes</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: Beginners starting their design journey</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Recorded Classes</p>
+                          <p className="text-xs text-muted-foreground">Learn UI fundamentals at your own pace</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Palette className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Figma Basics</p>
+                          <p className="text-xs text-muted-foreground">Master the industry-standard design tool</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Code className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">2 Mini UI Projects</p>
+                          <p className="text-xs text-muted-foreground">Hands-on practice with real designs</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Sparkles className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Canva AI Training</p>
+                          <p className="text-xs text-muted-foreground">Learn AI-powered design tools</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <FileText className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Resume Creation</p>
+                          <p className="text-xs text-muted-foreground">Professional resume done for you</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Globe className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Starter Portfolio</p>
+                          <p className="text-xs text-muted-foreground">Showcase your initial projects</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Award className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Course Completion Certificate</p>
+                          <p className="text-xs text-muted-foreground">Recognized industry certificate</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-green-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹5,999</p>
+                      <button className="w-full py-2 rounded-lg bg-green-500/10 text-green-600 dark:text-green-400 font-semibold hover:bg-green-500/20 transition-all border border-green-500/20">
+                        Explore Foundation Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+
+                {/* Professional Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <GlassCard className="p-6 border-2 border-blue-500/30 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 relative h-full hover:scale-105 transition-transform duration-300">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-xs font-semibold shadow-lg">
+                      ⭐⭐ MOST POPULAR
+                    </div>
+                    <div className="mb-4 mt-2">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-blue-500 text-white text-xs font-semibold">⭐⭐ PROFESSIONAL</span>
+                        <span className="text-xs text-muted-foreground">4 Months • 36 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-blue-500/10 rounded-lg border border-blue-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">3 live classes per week → 36 live classes</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: Design & marketing career seekers</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Everything in Foundation PLUS:</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Palette className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Complete UI/UX + DM Curriculum</p>
+                          <p className="text-xs text-muted-foreground">Full design, branding & marketing training</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Code className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">4 Real-World Projects</p>
+                          <p className="text-xs text-muted-foreground">Major design & marketing projects</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <TrendingUp className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Social Media Branding Pack</p>
+                          <p className="text-xs text-muted-foreground">Complete brand identity creation</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Globe className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Portfolio Website</p>
+                          <p className="text-xs text-muted-foreground">Hosted professional portfolio</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Target className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Job Portal Optimization</p>
+                          <p className="text-xs text-muted-foreground">Resume + portfolio guidance, mock interviews</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Users className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Weekly Live Doubt Clearing</p>
+                          <p className="text-xs text-muted-foreground">Get instant help from expert instructors</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <BarChart3 className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Social Media Case Studies</p>
+                          <p className="text-xs text-muted-foreground">Real marketing campaign analysis</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Award className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Course Completion Certificate</p>
+                          <p className="text-xs text-muted-foreground">Recognized industry certificate</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-blue-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹12,999</p>
+                      <button className="w-full py-2 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all shadow-lg">
+                        Explore Professional Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+
+                {/* Mastery Program */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <GlassCard className="p-6 border-2 border-orange-500/30 bg-gradient-to-br from-orange-500/5 to-red-500/5 h-full hover:scale-105 transition-transform duration-300">
+                    <div className="mb-4">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="px-3 py-1 rounded-full bg-orange-500 text-white text-xs font-semibold">⭐⭐⭐ MASTERY</span>
+                        <span className="text-xs text-muted-foreground">6 Months • 72 Live Classes</span>
+                      </div>
+                      <div className="mb-3 p-2 bg-orange-500/10 rounded-lg border border-orange-500/20">
+                        <p className="text-xs font-semibold text-foreground mb-1">📅 Live Class Schedule</p>
+                        <p className="text-xs text-muted-foreground">3 live classes per week → 72 live classes</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">Best For: Serious designers & freelancers</p>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-2">
+                        <Laptop className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Everything in Professional PLUS:</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Palette className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Full Design Portfolio (10–12 screens)</p>
+                          <p className="text-xs text-muted-foreground">Complete portfolio showcasing your best work</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Users className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">1-on-1 Portfolio Mentoring</p>
+                          <p className="text-xs text-muted-foreground">Personalized guidance from design experts</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Sparkles className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Brand Identity Creation</p>
+                          <p className="text-xs text-muted-foreground">Complete brand kit with logo, colors, typography</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Briefcase className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Freelancing Mastery</p>
+                          <p className="text-xs text-muted-foreground">Client management, proposals, pricing strategies</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Code className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Client Project Simulation</p>
+                          <p className="text-xs text-muted-foreground">Real-world client project experience</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Zap className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Priority Support</p>
+                          <p className="text-xs text-muted-foreground">Fast-track support for all questions</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Award className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Internship Letter</p>
+                          <p className="text-xs text-muted-foreground">Professional experience certificate</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Rocket className="h-5 w-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="font-semibold text-foreground text-sm">Career Ecosystem Access</p>
+                          <p className="text-xs text-muted-foreground">Pre-placement evaluation & job connections</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-orange-500/20">
+                      <p className="text-xs text-muted-foreground text-center mb-3">Starting from ₹24,999</p>
+                      <button className="w-full py-2 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg">
+                        Explore Mastery Path
+                      </button>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+              </div>
+            </div>
+
+            {/* Detailed Course Information - Expandable Section */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="mt-8"
+            >
+              <GlassCard className="p-8 overflow-hidden">
+                <div className="relative h-64 w-full rounded-xl overflow-hidden mb-8">
+                  <Image
+                    src="/assest/designing.jpg"
+                    alt="UI/UX + Digital Marketing + AI Tools"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 100vw"
+                    quality={90}
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6 text-white">
+                    <h4 className="text-2xl font-bold mb-2">UI/UX + Digital Marketing + AI Tools Program</h4>
+                    <p className="text-blue-200">Blend design, branding, marketing, and AI automation for creative & marketing careers</p>
+                  </div>
+                </div>
+
+                {/* Course Overview */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
+                  <button
+                    onClick={() => toggleSection('course4-overview')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-pink-500/10 to-rose-500/10 hover:from-pink-500/20 hover:to-rose-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Star className="h-5 w-5 text-pink-500" />
+                      <h4 className="text-xl font-bold font-heading">Course Overview</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course4-overview'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course4-overview'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl space-y-4">
+                          <p className="text-muted-foreground leading-relaxed">
+                            This program blends <strong>design, branding, marketing, and AI automation</strong>, preparing you for high-impact roles in creative & marketing industries.
+                          </p>
+                          <p className="text-muted-foreground font-semibold text-foreground mb-3">You will master:</p>
+                          <ul className="grid md:grid-cols-2 gap-3 list-disc list-inside text-muted-foreground">
+                            <li>UI/UX Design (Figma)</li>
+                            <li>Branding & Visual Identity</li>
+                            <li>Digital Marketing Strategy</li>
+                            <li>Ads (Google + Meta)</li>
+                            <li>AI Tools for Automation</li>
+                            <li>Portfolio Case Studies</li>
+                          </ul>
+                          <p className="text-muted-foreground font-semibold text-foreground mt-4">
+                            Perfect for students looking for creative + tech careers.
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Who Is This Program For */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course4-who')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-rose-500/10 to-pink-500/10 hover:from-rose-500/20 hover:to-pink-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <UserCheck className="h-5 w-5 text-rose-500" />
+                      <h4 className="text-xl font-bold font-heading">Who Is This Program For?</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course4-who'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course4-who'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">Perfect for:</p>
+                          <div className="grid md:grid-cols-2 gap-3">
+                            {[
+                              'School graduates, degree students',
+                              'Creatives and beginners',
+                              'Fresher designers',
+                              'Marketing aspirants',
+                              'Freelancers',
+                              'Anyone who wants to build a design or marketing career'
+                            ].map((item, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <CheckCircle className="h-5 w-5 text-rose-500 flex-shrink-0 mt-0.5" />
+                                <span className="text-muted-foreground">{item}</span>
+                              </div>
+                            ))}
+                          </div>
+                          <p className="text-muted-foreground mt-4 font-semibold text-foreground">
+                            ✅ No experience needed.
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* What You Will Learn */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course4-learn')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-pink-500/10 to-purple-500/10 hover:from-pink-500/20 hover:to-purple-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <BookOpen className="h-5 w-5 text-pink-500" />
+                      <h4 className="text-xl font-bold font-heading">What You Will Learn</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course4-learn'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course4-learn'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl space-y-6">
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Palette className="h-4 w-4 text-pink-500" />
+                              UI/UX Design
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Figma', 'Wireframes', 'Components', 'User research', 'UI design', 'Prototyping'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-pink-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Sparkles className="h-4 w-4 text-purple-500" />
+                              Branding
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Typography', 'Color psychology', 'Logo & identity creation', 'Style guides'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-purple-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <TrendingUp className="h-4 w-4 text-blue-500" />
+                              Digital Marketing
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Social media strategy', 'Google Ads + Meta Ads', 'Content creation', 'Marketing funnels'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-blue-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Brain className="h-4 w-4 text-cyan-500" />
+                              AI Tools
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['AI design', 'AI content automation', 'AI analytics'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-cyan-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="font-bold text-foreground mb-3 flex items-center gap-2">
+                              <Target className="h-4 w-4 text-orange-500" />
+                              Professional Skills
+                            </h5>
+                            <div className="grid md:grid-cols-2 gap-2 text-muted-foreground">
+                              {['Case study writing', 'Client communication', 'Freelancing fundamentals'].map((skill, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <CheckCircle className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                  <span>{skill}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* What You Will Build */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course4-build')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 hover:from-green-500/20 hover:to-emerald-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Rocket className="h-5 w-5 text-green-500" />
+                      <h4 className="text-xl font-bold font-heading">What You Will Build</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course4-build'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course4-build'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">You will build comprehensive design and marketing projects, including:</p>
+                          <div className="grid md:grid-cols-2 gap-3">
+                            {[
+                              'Mobile app UI',
+                              'Website UI',
+                              'Landing pages',
+                              'Logo + brand kit',
+                              'Social media campaigns',
+                              'Marketing strategy document',
+                              'Client project simulation',
+                              'Design portfolio website'
+                            ].map((project, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <span className="text-green-500 font-bold">🔹</span>
+                                <span className="text-muted-foreground">{project}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Career Services */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course4-career')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-orange-500/10 to-red-500/10 hover:from-orange-500/20 hover:to-red-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Briefcase className="h-5 w-5 text-orange-500" />
+                      <h4 className="text-xl font-bold font-heading">Career Services Included</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course4-career'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course4-career'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4 font-semibold text-foreground">
+                            Every CodeKids student receives:
+                          </p>
+                          <div className="grid md:grid-cols-2 gap-3 mb-4">
+                            {[
+                              'Resume created for you',
+                              'Hosted portfolio website',
+                              'LinkedIn optimization',
+                              'GitHub optimization',
+                              'Job portal setup (Naukri, Foundit, Indeed…)',
+                              'Professional intro video',
+                              'HR + Technical interview prep',
+                              'Soft skills training',
+                              'Career roadmap'
+                            ].map((service, idx) => (
+                              <div key={idx} className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                <span className="text-muted-foreground">{service}</span>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="p-4 bg-orange-500/10 rounded-lg border border-orange-500/20">
+                            <p className="font-semibold text-foreground mb-2">Mastery Program adds:</p>
+                            <div className="space-y-2">
+                              {['Full design portfolio (10–12 screens)', '1-on-1 portfolio mentoring', 'Freelancing mastery', 'Career ecosystem access'].map((item, idx) => (
+                                <div key={idx} className="flex items-center gap-2">
+                                  <Star className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{item}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Career Outcomes */}
+                <motion.div
+                  className="mb-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.5 }}
+                >
+                  <button
+                    onClick={() => toggleSection('course4-outcomes')}
+                    className="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-rose-500/10 to-pink-500/10 hover:from-rose-500/20 hover:to-pink-500/20 transition-all mb-4"
+                  >
+                    <div className="flex items-center gap-3">
+                      <TrendingUp className="h-5 w-5 text-rose-500" />
+                      <h4 className="text-xl font-bold font-heading">Career Outcomes</h4>
+                    </div>
+                    <ChevronDown
+                      className={`h-5 w-5 transition-transform duration-300 ${expandedSections['course4-outcomes'] ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {expandedSections['course4-outcomes'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-6 bg-secondary/50 rounded-xl">
+                          <p className="text-muted-foreground mb-4">After completing this program, you can become:</p>
+                          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                            {[
+                              'UI/UX Designer',
+                              'Graphic Designer',
+                              'Digital Marketer',
+                              'Brand Strategist',
+                              'Social Media Manager',
+                              'Freelancer / Agency owner'
+                            ].map((role, idx) => (
+                              <div key={idx} className="flex items-center gap-2 p-3 rounded-lg bg-rose-500/5 border border-rose-500/10">
+                                <ArrowRight className="h-4 w-4 text-rose-500 flex-shrink-0" />
+                                <span className="text-muted-foreground font-medium">{role}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              </GlassCard>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Existing Tracks Section */}
+      <section className="py-20 bg-gradient-to-b from-transparent to-secondary/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-foreground text-4xl md:text-5xl font-bold mb-4 font-heading">
+              Choose Your <span className="bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] bg-clip-text text-transparent">Single Tech Track</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Industry-relevant programs designed to make you job-ready with hands-on projects and real-world experience
+              Individual courses for focused learning (Best for slow learners or deep specialization)
             </p>
           </motion.div>
 
@@ -423,7 +3279,7 @@ export default function CodeKidsProPage() {
             >
               <div className="relative h-96 rounded-2xl overflow-hidden group">
                 <Image
-                  src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/assest/students learning.jpg"
                   alt="Learning experience"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"

@@ -38,12 +38,49 @@ const fadeInRight = {
 
 const tracks = [
   {
+    name: 'AI + ML + Full-Stack Development',
+    duration: '4-8 months',
+    price: 12999,
+    originalPrice: 69999,
+    description: 'Combined Generative AI, Machine Learning & Full-Stack Development',
+    features: ['React, Node.js, MongoDB', 'Python, ML Algorithms', 'Generative AI', 'Cloud Deployment'],
+    type: 'combination',
+  },
+  {
+    name: 'Data Science + Data Engineering + GenAI',
+    duration: '3-7 months',
+    price: 9999,
+    originalPrice: 59999,
+    description: 'Complete data professional program with GenAI integration',
+    features: ['Python, SQL', 'Power BI', 'ETL Pipelines', 'GenAI for Data'],
+    type: 'combination',
+  },
+  {
+    name: 'Cybersecurity + Cloud + AI Security',
+    duration: '3.5-7 months',
+    price: 14999,
+    originalPrice: 79999,
+    description: 'High-salary cybersecurity roles with cloud & AI security',
+    features: ['Ethical Hacking', 'SOC Operations', 'Cloud Security', 'AI Threat Detection'],
+    type: 'combination',
+  },
+  {
+    name: 'UI/UX + Digital Marketing + AI Tools',
+    duration: '2.5-6 months',
+    price: 5999,
+    originalPrice: 39999,
+    description: 'Creative + marketing career with AI automation tools',
+    features: ['Figma Design', 'Google & Meta Ads', 'AI Design Tools', 'Brand Identity'],
+    type: 'combination',
+  },
+  {
     name: 'Full Stack Development',
     duration: '6 months',
     price: 25000,
     originalPrice: 50000,
     description: 'Master MERN stack, APIs, and modern frameworks',
     features: ['React, Node.js, MongoDB', 'Real-world projects', 'Portfolio building', 'Job assistance'],
+    type: 'single',
   },
   {
     name: 'Cloud Computing & DevOps',
@@ -52,6 +89,7 @@ const tracks = [
     originalPrice: 40000,
     description: 'AWS, Azure, Docker, Kubernetes, and CI/CD pipelines',
     features: ['AWS, Azure, GCP', 'Docker & Kubernetes', 'CI/CD pipelines', 'Industry certifications'],
+    type: 'single',
   },
   {
     name: 'AI & Machine Learning',
@@ -60,6 +98,7 @@ const tracks = [
     originalPrice: 60000,
     description: 'Build intelligent systems with Python and TensorFlow',
     features: ['Python, TensorFlow', 'ML projects', 'Data science', 'AI applications'],
+    type: 'single',
   },
   {
     name: 'Data Science',
@@ -68,6 +107,7 @@ const tracks = [
     originalPrice: 56000,
     description: 'Analytics, visualization, and predictive modeling',
     features: ['Python, R, SQL', 'Data visualization', 'Machine learning', 'Portfolio projects'],
+    type: 'single',
   },
   {
     name: 'Cybersecurity',
@@ -76,6 +116,7 @@ const tracks = [
     originalPrice: 64000,
     description: 'Protect systems and networks from cyber threats',
     features: ['Ethical hacking', 'Security audits', 'Certifications', 'Real-world scenarios'],
+    type: 'single',
   },
   {
     name: 'UI/UX Design',
@@ -84,6 +125,7 @@ const tracks = [
     originalPrice: 36000,
     description: 'Create beautiful and user-friendly digital experiences',
     features: ['Figma, Sketch', 'User research', 'Prototyping', 'Design portfolio'],
+    type: 'single',
   },
 ];
 
@@ -120,21 +162,21 @@ const testimonials = [
     role: 'Software Engineer, TechCorp',
     text: 'CodeKids_Pro helped me transition from a non-tech background to a full-stack developer. The structured curriculum and internship support made all the difference.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian professional male
+    image: '/assest/ravi_kalyan_reddy.jpg', // Indian professional male
   },
   {
     name: 'Priya Patel',
     role: 'Cloud Engineer, CloudTech',
     text: 'The DevOps course was excellent! I got placed before even completing the program. The instructors are industry experts who truly care about your success.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian professional female
+    image: '/assest/swapna.jpg', // Indian professional female
   },
   {
     name: 'Arjun Kumar',
     role: 'AI Engineer, AI Labs',
     text: 'Best investment I made in my career. The AI/ML track gave me hands-on experience with real projects, and the placement team helped me land my dream job.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian professional
+    image: '/assest/Sharavan_reddy.jpg', // Indian professional
   },
 ];
 
@@ -315,7 +357,7 @@ export default function CodeKidsProPricingPage() {
             >
               <div className="relative h-[600px] rounded-3xl overflow-hidden">
                 <Image
-                  src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/assest/students learning.jpg"
                   alt="Graduates learning tech skills"
                   fill
                   className="object-cover"
@@ -872,6 +914,645 @@ export default function CodeKidsProPricingPage() {
         </div>
       </section>
 
+      {/* Combination Courses Pricing Section */}
+      <section id="combination-courses" className="relative py-20 z-10 bg-gradient-to-br from-[#050814] to-[#0F1A30] overflow-hidden">
+        {/* Enhanced Background Effects */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <motion.div
+            animate={{
+              x: [0, 100, 0],
+              y: [0, 100, 0],
+              scale: [1, 1.2, 1],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: 'linear',
+            }}
+            className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-[#FF4B8F]/20 via-[#7B3DFF]/20 to-[#2ED0FF]/20 rounded-full blur-3xl"
+          />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div {...fadeInUp} className="text-center mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#FF4B8F]/30 via-[#7B3DFF]/30 to-[#2ED0FF]/30 border-2 border-[#FF4B8F]/50 backdrop-blur-xl mb-6 shadow-2xl"
+            >
+              <Star className="h-5 w-5 text-[#FFC857] animate-pulse" />
+              <span className="text-white font-bold text-sm md:text-base">Combined Courses • Better Job Prospects • Higher Salaries</span>
+              <Star className="h-5 w-5 text-[#FFC857] animate-pulse" />
+            </motion.div>
+
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-heading text-white">
+              Combination Courses <span className="block mt-2 bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] bg-clip-text text-transparent">Premium Programs</span>
+            </h2>
+            <p className="text-xl md:text-2xl text-white/90 mb-6 leading-relaxed font-medium max-w-4xl mx-auto">
+              Industry-ready combination programs crafted for maximum skill, project depth & job readiness. Multi-skill programs for 2026 job market.
+            </p>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#FF4B8F]/30 via-[#7B3DFF]/30 to-[#2ED0FF]/30 border-2 border-white/40 text-white font-bold text-base md:text-lg shadow-2xl backdrop-blur-xl"
+            >
+              <Sparkles className="h-6 w-6 text-[#FFC857] animate-spin-slow" />
+              <span>Why Combined? → Companies Don&apos;t Hire Single-Skill People Anymore!</span>
+              <Sparkles className="h-6 w-6 text-[#FFC857] animate-spin-slow" />
+            </motion.div>
+          </motion.div>
+
+          {/* Course 1: AI + ML + Full-Stack */}
+          <motion.div {...fadeInUp} className="mb-20">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center">
+                <Brain className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold font-heading text-white">1️⃣ AI + ML + Full-Stack Development</h3>
+                <p className="text-white/80 text-sm">Flagship, premium, highest-value course</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Foundation */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-slate-700/20 via-indigo-900/15 to-slate-800/20 border-2 border-slate-600/40 p-6 hover:scale-105 transition-transform duration-300 group">
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-slate-600/40 border border-slate-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐ FOUNDATION</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-slate-700/20 rounded-lg border border-slate-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">4 Months • 32 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">2 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-slate-700/30 to-indigo-900/20 border border-slate-600/40">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹30,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹12,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-slate-600/40 border border-slate-500/60 backdrop-blur-sm">
+                        <p className="text-slate-300 text-xs font-bold">Save 57%</p>
+                      </div>
+                    </div>
+                    <p className="text-slate-300 text-sm font-bold mt-2">Price Range: ₹12,999 – ₹18,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹12,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Live + Recorded Classes', '3 Real-World Projects', 'Resume Creation', 'Mini Portfolio', 'LinkedIn & GitHub Setup', 'Course Certificate'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-slate-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-slate-700/30 text-slate-200 font-semibold text-center hover:bg-slate-600/40 transition-all border border-slate-600/40 hover:border-slate-500/60"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+
+              {/* Professional */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-indigo-600/20 via-purple-600/15 to-indigo-700/20 border-2 border-indigo-500/50 p-6 hover:scale-105 transition-transform duration-300 group shadow-lg shadow-indigo-500/20">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-xs font-semibold shadow-lg shadow-indigo-500/50 z-20 backdrop-blur-sm">
+                  ⭐⭐ MOST POPULAR
+                </div>
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-indigo-600/40 border border-indigo-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐⭐ PROFESSIONAL</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-indigo-700/20 rounded-lg border border-indigo-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">6 Months • 60 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">2-3 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-indigo-600/30 via-purple-600/20 to-indigo-700/30 border border-indigo-500/40">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹60,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹24,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-indigo-600/40 border border-indigo-500/60 backdrop-blur-sm">
+                        <p className="text-indigo-200 text-xs font-bold">Save 58%</p>
+                      </div>
+                    </div>
+                    <p className="text-indigo-200 text-sm font-bold mt-2">Price Range: ₹24,999 – ₹34,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹24,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Everything in Foundation', '10+ Advanced Projects', 'Weekly Doubt Clearing', 'Interview Preparation', 'Full Portfolio Website', 'Complete Profile Makeover', 'Soft-Skills Training'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-indigo-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold text-center hover:shadow-xl hover:shadow-indigo-500/50 transition-all"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+
+              {/* Mastery */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-amber-600/20 via-yellow-600/15 to-amber-700/20 border-2 border-amber-500/50 p-6 hover:scale-105 transition-transform duration-300 group shadow-lg shadow-amber-500/20">
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-600/40 border border-amber-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐⭐⭐ MASTERY</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-amber-700/20 rounded-lg border border-amber-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">8 Months • 96 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">3 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-amber-600/30 via-yellow-600/20 to-amber-700/30 border border-amber-500/40">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹1,20,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹49,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-amber-600/40 border border-amber-500/60 backdrop-blur-sm">
+                        <p className="text-amber-200 text-xs font-bold">Save 58%</p>
+                      </div>
+                    </div>
+                    <p className="text-amber-200 text-sm font-bold mt-2">Price Range: ₹49,999 – ₹69,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹49,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Everything in Professional', '2-3 Month Internship', 'Dedicated Project Mentor', '1-on-1 Weekly Mentorship', '3 Capstone AI Projects', 'Premium Job Assistance', 'Lifetime LMS Access'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-700 text-white font-semibold text-center hover:shadow-xl hover:shadow-amber-500/50 transition-all"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+            </div>
+          </motion.div>
+
+          {/* Course 2: Data Science + Data Engineering + GenAI */}
+          <motion.div {...fadeInUp} className="mb-20">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-500 flex items-center justify-center">
+                <Database className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold font-heading text-white">2️⃣ Data Science + Data Engineering + GenAI</h3>
+                <p className="text-white/80 text-sm">Fastest placement, high admissions course</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Foundation */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-slate-700/20 via-indigo-900/15 to-slate-800/20 border-2 border-slate-600/40 p-6 hover:scale-105 transition-transform duration-300 group">
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-slate-600/40 border border-slate-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐ FOUNDATION</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-slate-700/20 rounded-lg border border-slate-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">3 Months • 24 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">2 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-slate-700/30 to-indigo-900/20 border border-slate-600/40">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹20,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹9,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-slate-600/40 border border-slate-500/60 backdrop-blur-sm">
+                        <p className="text-slate-300 text-xs font-bold">Save 50%</p>
+                      </div>
+                    </div>
+                    <p className="text-slate-300 text-sm font-bold mt-2">Price Range: ₹9,999 – ₹14,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹9,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Live + Recorded Classes', 'Python + SQL Basics', '2 Beginner Projects', 'Resume Creation', 'Starter Portfolio', 'LinkedIn & GitHub Setup'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-slate-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-slate-700/30 text-slate-200 font-semibold text-center hover:bg-slate-600/40 transition-all border border-slate-600/40 hover:border-slate-500/60"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+
+              {/* Professional */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-indigo-600/20 via-purple-600/15 to-indigo-700/20 border-2 border-indigo-500/50 p-6 hover:scale-105 transition-transform duration-300 group shadow-lg shadow-indigo-500/20">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-xs font-semibold shadow-lg shadow-indigo-500/50 z-20 backdrop-blur-sm">
+                  ⭐⭐ MOST POPULAR
+                </div>
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-indigo-600/40 border border-indigo-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐⭐ PROFESSIONAL</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-indigo-700/20 rounded-lg border border-indigo-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">5 Months • 48 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">2-3 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-indigo-600/30 via-purple-600/20 to-indigo-700/30 border border-indigo-500/40">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹40,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹19,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-indigo-600/40 border border-indigo-500/60 backdrop-blur-sm">
+                        <p className="text-indigo-200 text-xs font-bold">Save 50%</p>
+                      </div>
+                    </div>
+                    <p className="text-indigo-200 text-sm font-bold mt-2">Price Range: ₹19,999 – ₹29,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹19,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Everything in Foundation', '6 Real Data Projects', 'Power BI Dashboards', 'ML Model Building', 'ETL Pipeline Projects', 'Full Portfolio Website', 'Job Portal Optimization'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-indigo-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold text-center hover:shadow-xl hover:shadow-indigo-500/50 transition-all"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+
+              {/* Mastery */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-amber-600/20 via-yellow-600/15 to-amber-700/20 border-2 border-amber-500/50 p-6 hover:scale-105 transition-transform duration-300 group shadow-lg shadow-amber-500/20">
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-600/40 border border-amber-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐⭐⭐ MASTERY</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-amber-700/20 rounded-lg border border-amber-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">7 Months • 84 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">3 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-amber-600/30 via-yellow-600/20 to-amber-700/30 border border-amber-500/40">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹80,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹39,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-amber-600/40 border border-amber-500/60 backdrop-blur-sm">
+                        <p className="text-amber-200 text-xs font-bold">Save 50%</p>
+                      </div>
+                    </div>
+                    <p className="text-amber-200 text-sm font-bold mt-2">Price Range: ₹39,999 – ₹59,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹39,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Everything in Professional', '2-3 Month Internship', 'Cloud Labs (GCP/AWS)', 'BigQuery / Snowflake', 'Advanced ML + GenAI', 'Weekly 1-on-1 Mentorship', 'Placement Ecosystem'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-700 text-white font-semibold text-center hover:shadow-xl hover:shadow-amber-500/50 transition-all"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+            </div>
+          </motion.div>
+
+          {/* Course 3: Cybersecurity + Cloud + AI Security */}
+          <motion.div {...fadeInUp} className="mb-20">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-green-600 to-teal-500 flex items-center justify-center">
+                <Shield className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold font-heading text-white">3️⃣ Cybersecurity + Cloud + AI Security</h3>
+                <p className="text-white/80 text-sm">High-salary roles + niche skills</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Foundation */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-slate-700/20 via-indigo-900/15 to-slate-800/20 border-2 border-slate-600/40 p-6 hover:scale-105 transition-transform duration-300 group">
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-slate-600/40 border border-slate-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐ FOUNDATION</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-slate-700/20 rounded-lg border border-slate-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">3.5 Months • 28 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">2 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-green-500/20 to-emerald-500/10 border border-green-500/30">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹30,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹14,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-green-500/30 border border-green-500/50">
+                        <p className="text-green-400 text-xs font-bold">Save 50%</p>
+                      </div>
+                    </div>
+                    <p className="text-green-400 text-sm font-bold mt-2">Price Range: ₹14,999 – ₹19,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹14,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Live Classes', 'Linux + Networking Basics', 'Kali Linux Setup', '2 Beginner Security Labs', 'Resume Creation', 'LinkedIn Starter Setup'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-slate-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-slate-700/30 text-slate-200 font-semibold text-center hover:bg-slate-600/40 transition-all border border-slate-600/40 hover:border-slate-500/60"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+
+              {/* Professional */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-indigo-600/20 via-purple-600/15 to-indigo-700/20 border-2 border-indigo-500/50 p-6 hover:scale-105 transition-transform duration-300 group shadow-lg shadow-indigo-500/20">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-xs font-semibold shadow-lg shadow-indigo-500/50 z-20 backdrop-blur-sm">
+                  ⭐⭐ MOST POPULAR
+                </div>
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-indigo-600/40 border border-indigo-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐⭐ PROFESSIONAL</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-indigo-700/20 rounded-lg border border-indigo-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">5 Months • 50 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">2-3 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-indigo-600/30 via-purple-600/20 to-indigo-700/30 border border-indigo-500/40">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹50,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹29,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-indigo-600/40 border border-indigo-500/60 backdrop-blur-sm">
+                        <p className="text-indigo-200 text-xs font-bold">Save 40%</p>
+                      </div>
+                    </div>
+                    <p className="text-indigo-200 text-sm font-bold mt-2">Price Range: ₹29,999 – ₹39,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹29,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Everything in Foundation', 'SOC Training', 'SIEM Tools (Splunk/Azure)', '6 Hands-On Labs', 'Cloud Security Foundations', 'Full Cyber Portfolio', 'Job Portal Optimization'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-indigo-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold text-center hover:shadow-xl hover:shadow-indigo-500/50 transition-all"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+
+              {/* Mastery */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-amber-600/20 via-yellow-600/15 to-amber-700/20 border-2 border-amber-500/50 p-6 hover:scale-105 transition-transform duration-300 group shadow-lg shadow-amber-500/20">
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-600/40 border border-amber-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐⭐⭐ MASTERY</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-amber-700/20 rounded-lg border border-amber-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">7 Months • 84 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">3 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-amber-600/30 via-yellow-600/20 to-amber-700/30 border border-amber-500/40">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹1,00,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹49,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-amber-600/40 border border-amber-500/60 backdrop-blur-sm">
+                        <p className="text-amber-200 text-xs font-bold">Save 50%</p>
+                      </div>
+                    </div>
+                    <p className="text-amber-200 text-sm font-bold mt-2">Price Range: ₹49,999 – ₹79,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹49,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Everything in Professional', 'SOC Internship Simulation', 'AWS Cloud Security Labs', 'AI Threat Detection Tools', 'Red-Team/Blue-Team Practicals', 'Weekly 1-on-1 Mentorship', 'Placement Guarantee Track'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-700 text-white font-semibold text-center hover:shadow-xl hover:shadow-amber-500/50 transition-all"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+            </div>
+          </motion.div>
+
+          {/* Course 4: UI/UX + Digital Marketing + AI Tools */}
+          <motion.div {...fadeInUp} className="mb-20">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-pink-600 to-rose-500 flex items-center justify-center">
+                <Palette className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold font-heading text-white">4️⃣ UI/UX + Digital Marketing + AI Tools</h3>
+                <p className="text-white/80 text-sm">Creative, beginner-friendly, high admission</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Foundation */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-slate-700/20 via-indigo-900/15 to-slate-800/20 border-2 border-slate-600/40 p-6 hover:scale-105 transition-transform duration-300 group">
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-slate-600/40 border border-slate-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐ FOUNDATION</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-slate-700/20 rounded-lg border border-slate-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">2.5 Months • 20 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">2 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-green-500/20 to-emerald-500/10 border border-green-500/30">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹12,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹5,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-green-500/30 border border-green-500/50">
+                        <p className="text-green-400 text-xs font-bold">Save 50%</p>
+                      </div>
+                    </div>
+                    <p className="text-green-400 text-sm font-bold mt-2">Price Range: ₹5,999 – ₹9,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹5,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Recorded Classes', 'Figma Basics', '2 Mini UI Projects', 'Canva AI Training', 'Resume Creation', 'Starter Portfolio'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-slate-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-slate-700/30 text-slate-200 font-semibold text-center hover:bg-slate-600/40 transition-all border border-slate-600/40 hover:border-slate-500/60"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+
+              {/* Professional */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-indigo-600/20 via-purple-600/15 to-indigo-700/20 border-2 border-indigo-500/50 p-6 hover:scale-105 transition-transform duration-300 group shadow-lg shadow-indigo-500/20">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-xs font-semibold shadow-lg shadow-indigo-500/50 z-20 backdrop-blur-sm">
+                  ⭐⭐ MOST POPULAR
+                </div>
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-indigo-600/40 border border-indigo-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐⭐ PROFESSIONAL</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-indigo-700/20 rounded-lg border border-indigo-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">4 Months • 36 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">3 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-indigo-600/30 via-purple-600/20 to-indigo-700/30 border border-indigo-500/40">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹26,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹12,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-indigo-600/40 border border-indigo-500/60 backdrop-blur-sm">
+                        <p className="text-indigo-200 text-xs font-bold">Save 50%</p>
+                      </div>
+                    </div>
+                    <p className="text-indigo-200 text-sm font-bold mt-2">Price Range: ₹12,999 – ₹17,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹12,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Everything in Foundation', 'Complete UI/UX + DM Curriculum', '4 Real-World Projects', 'Social Media Branding Pack', 'Portfolio Website', 'Job Portal Optimization', 'Weekly Live Doubt Clearing'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-indigo-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold text-center hover:shadow-xl hover:shadow-indigo-500/50 transition-all"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+
+              {/* Mastery */}
+              <GlassCard className="relative h-full bg-gradient-to-br from-amber-600/20 via-yellow-600/15 to-amber-700/20 border-2 border-amber-500/50 p-6 hover:scale-105 transition-transform duration-300 group shadow-lg shadow-amber-500/20">
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-600/40 border border-amber-500/60 backdrop-blur-sm">
+                  <span className="text-white text-xs font-semibold">⭐⭐⭐ MASTERY</span>
+                </div>
+                <div className="mt-12 mb-4">
+                  <div className="mb-3 p-2 bg-amber-700/20 rounded-lg border border-amber-600/30">
+                    <p className="text-xs font-semibold text-white mb-1">📅 Program Duration</p>
+                    <p className="text-xs text-white/80">6 Months • 72 Live Classes</p>
+                    <p className="text-xs text-white/70 mt-1">3 live classes per week</p>
+                  </div>
+                  <div className="mb-4 p-4 rounded-xl bg-gradient-to-br from-amber-600/30 via-yellow-600/20 to-amber-700/30 border border-amber-500/40">
+                    <div className="flex items-baseline justify-between mb-2">
+                      <div>
+                        <p className="text-white/60 line-through text-xs mb-1">Original: ₹50,000</p>
+                        <p className="text-4xl font-extrabold text-white leading-tight">₹24,999</p>
+                      </div>
+                      <div className="px-2 py-1 rounded bg-amber-600/40 border border-amber-500/60 backdrop-blur-sm">
+                        <p className="text-amber-200 text-xs font-bold">Save 50%</p>
+                      </div>
+                    </div>
+                    <p className="text-amber-200 text-sm font-bold mt-2">Price Range: ₹24,999 – ₹39,999</p>
+                    <p className="text-white/70 text-xs mt-1">Starting from ₹24,999</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-6 text-sm text-white/90">
+                  {['Everything in Professional', 'Full Design Portfolio (10-12 screens)', '1-on-1 Portfolio Mentoring', 'Brand Identity Creation', 'Freelancing Mastery', 'Client Project Simulation', 'Internship Letter'].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#contact-form"
+                  onClick={(e) => handleAnchorClick(e, '#contact-form')}
+                  className="block w-full py-3 rounded-lg bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-700 text-white font-semibold text-center hover:shadow-xl hover:shadow-amber-500/50 transition-all"
+                >
+                  Enroll Now
+                </Link>
+              </GlassCard>
+            </div>
+          </motion.div>
+
+          <motion.div {...fadeInUp} className="text-center">
+            <GlassCard className="bg-gradient-to-r from-[#FF4B8F]/10 via-[#7B3DFF]/10 to-[#2ED0FF]/10 border-2 border-white/20 p-6 backdrop-blur-xl">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-white/90">
+                <Info className="h-6 w-6 text-[#2ED0FF] flex-shrink-0" />
+                <p className="text-sm md:text-base font-medium">
+                  <span className="font-bold text-white">Combined Courses</span> offer better job prospects with multi-skill expertise. All programs include career services, portfolio building, and placement assistance. Pricing shown is starting price — final pricing varies by program level.
+                </p>
+              </div>
+            </GlassCard>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Online Crash Courses Pricing Section */}
       <section id="crash-course-pricing" className="relative py-20 z-10 bg-gradient-to-br from-[#050814] to-[#0F1A30]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1043,7 +1724,7 @@ export default function CodeKidsProPricingPage() {
                       <Star key={i} className="h-4 w-4 text-[#FFC857] fill-[#FFC857]" />
                     ))}
                   </div>
-                  <p className="text-white/90 italic leading-relaxed font-medium">"{testimonial.text}"</p>
+                  <p className="text-white/90 italic leading-relaxed font-medium">&quot;{testimonial.text}&quot;</p>
                 </GlassCard>
               </motion.div>
             ))}
@@ -1086,7 +1767,7 @@ export default function CodeKidsProPricingPage() {
               <GlassCard className="h-full p-6 hover:scale-105 transition-transform duration-300 border-2 border-transparent hover:border-[#2ED0FF]/50">
                 <div className="relative h-48 rounded-xl overflow-hidden mb-4 bg-gradient-to-br from-[#2ED0FF]/20 to-[#7B3DFF]/20">
                   <Image
-                    src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/assest/coding.jpg"
                     alt="Portfolio Website Example"
                     fill
                     className="object-cover opacity-50 group-hover:opacity-70 transition-opacity"
@@ -1126,7 +1807,7 @@ export default function CodeKidsProPricingPage() {
               <GlassCard className="h-full p-6 hover:scale-105 transition-transform duration-300 border-2 border-transparent hover:border-[#FF4B8F]/50">
                 <div className="relative h-48 rounded-xl overflow-hidden mb-4 bg-gradient-to-br from-[#FF4B8F]/20 to-[#7B3DFF]/20">
                   <Image
-                    src="https://images.pexels.com/photos/5905717/pexels-photo-5905717.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/assest/resume.jpg"
                     alt="Resume Template Example"
                     fill
                     className="object-cover opacity-50 group-hover:opacity-70 transition-opacity"
@@ -1166,7 +1847,7 @@ export default function CodeKidsProPricingPage() {
               <GlassCard className="h-full p-6 hover:scale-105 transition-transform duration-300 border-2 border-transparent hover:border-[#7B3DFF]/50">
                 <div className="relative h-48 rounded-xl overflow-hidden mb-4 bg-gradient-to-br from-[#7B3DFF]/20 to-[#2ED0FF]/20">
                   <Image
-                    src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/assest/github.jpg"
                     alt="GitHub Profile Optimization"
                     fill
                     className="object-cover opacity-50 group-hover:opacity-70 transition-opacity"
@@ -1206,7 +1887,7 @@ export default function CodeKidsProPricingPage() {
               <GlassCard className="h-full p-6 hover:scale-105 transition-transform duration-300 border-2 border-transparent hover:border-[#2ED0FF]/50">
                 <div className="relative h-48 rounded-xl overflow-hidden mb-4 bg-gradient-to-br from-[#2ED0FF]/20 to-[#FF4B8F]/20">
                   <Image
-                    src="https://images.pexels.com/photos/5905717/pexels-photo-5905717.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/assest/linkedin.jpg"
                     alt="LinkedIn Profile Optimization"
                     fill
                     className="object-cover opacity-50 group-hover:opacity-70 transition-opacity"

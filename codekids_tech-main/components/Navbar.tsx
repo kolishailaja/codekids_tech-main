@@ -102,14 +102,14 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           <Link 
             href="/" 
             prefetch={true}
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-2 sm:gap-3 group"
           >
-            <div className="relative h-12 w-12 rounded-xl overflow-hidden ring-2 ring-primary/20 group-hover:ring-primary/50 transition-all">
+            <div className="relative h-10 w-10 sm:h-12 sm:w-12 rounded-lg sm:rounded-xl overflow-hidden ring-2 ring-primary/20 group-hover:ring-primary/50 transition-all">
               <Image
                 src="/assest/codekids_finallogo.jpg"
                 alt="CodeKids"
@@ -118,12 +118,23 @@ export default function Navbar() {
                 priority
               />
             </div>
-            <span className="text-xl font-bold font-heading text-foreground">
+            <span className="text-lg sm:text-xl font-bold font-heading text-foreground">
               Code<span className="bg-gradient-to-r from-[#FF4B8F] via-[#7B3DFF] to-[#2ED0FF] bg-clip-text text-transparent">Kids</span>
             </span>
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
+            <Link
+              href="/"
+              prefetch={true}
+              className={`text-sm font-medium transition-colors py-2 ${
+                pathname === '/' 
+                  ? 'text-primary' 
+                  : 'text-foreground hover:text-primary'
+              }`}
+            >
+              Home
+            </Link>
             {Object.entries(menuGroups).map(([groupName, items]) => (
               <div
                 key={groupName}
@@ -183,11 +194,12 @@ export default function Navbar() {
             <ThemeToggle />
           </div>
 
-          <div className="lg:hidden flex items-center gap-4">
+          <div className="lg:hidden flex items-center gap-2 sm:gap-4">
             <ThemeToggle />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-foreground"
+              className="text-foreground p-2 -mr-2 sm:mr-0 min-w-[44px] min-h-[44px] flex items-center justify-center touch-manipulation"
+              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -201,13 +213,28 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white/95 dark:bg-[#0F1419]/95 backdrop-blur-xl border-t border-border"
+            className="lg:hidden bg-white/95 dark:bg-[#0F1419]/95 backdrop-blur-xl border-t border-border max-h-[calc(100vh-4rem)] overflow-y-auto"
           >
-            <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 space-y-4 sm:space-y-6">
+              <Link
+                href="/"
+                prefetch={true}
+                onClick={(e) => {
+                  handleLinkClick(e, '/');
+                  setIsMobileMenuOpen(false);
+                }}
+                className={`block text-base font-medium transition-colors mb-3 py-2 min-h-[44px] flex items-center ${
+                  pathname === '/' 
+                    ? 'text-primary' 
+                    : 'text-foreground hover:text-primary'
+                }`}
+              >
+                Home
+              </Link>
               {Object.entries(menuGroups).map(([groupName, items]) => (
-                <div key={groupName}>
-                  <h3 className="font-semibold text-foreground mb-2">{groupName}</h3>
-                  <div className="space-y-2 pl-4">
+                <div key={groupName} className="pb-2">
+                  <h3 className="font-semibold text-foreground mb-3 text-base">{groupName}</h3>
+                  <div className="space-y-1 pl-2">
                     {items.map((item) => (
                       <Link
                         key={item.href}
@@ -217,7 +244,7 @@ export default function Navbar() {
                           handleLinkClick(e, item.href);
                           setIsMobileMenuOpen(false);
                         }}
-                        className="block text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
+                        className="block text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors duration-200 py-2 min-h-[44px] flex items-center"
                       >
                         {item.label}
                       </Link>
@@ -234,7 +261,7 @@ export default function Navbar() {
                     handleLinkClick(e, '/codekids-jr');
                     setIsMobileMenuOpen(false);
                   }}
-                  className="px-6 py-3 text-center font-semibold rounded-full bg-ck-gradient-main text-white transition-all duration-200 active:scale-95"
+                  className="px-6 py-3.5 text-center font-semibold rounded-full bg-ck-gradient-main text-white transition-all duration-200 active:scale-95 min-h-[48px] flex items-center justify-center touch-manipulation"
                 >
                   For Schools
                 </Link>
@@ -245,7 +272,7 @@ export default function Navbar() {
                     handleLinkClick(e, '/codekids-pro');
                     setIsMobileMenuOpen(false);
                   }}
-                  className="px-6 py-3 text-center font-semibold rounded-full border-2 border-primary text-primary transition-all duration-200 active:scale-95"
+                  className="px-6 py-3.5 text-center font-semibold rounded-full border-2 border-primary text-primary transition-all duration-200 active:scale-95 min-h-[48px] flex items-center justify-center touch-manipulation"
                 >
                   For Graduates
                 </Link>

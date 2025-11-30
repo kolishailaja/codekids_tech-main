@@ -52,7 +52,7 @@ const testimonials = [
     role: 'Parent of 7th Class Student',
     text: 'My son used to play games all day. Now he builds his own games and robots! The fees are very reasonable for the value they provide.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian parent
+    image: '/assest/parents2.jpg',
   },
   {
     type: 'principal',
@@ -60,7 +60,7 @@ const testimonials = [
     role: 'Principal, Partner School',
     text: 'We partnered with CodeKids_JR for our Tinkering Lab. The pricing model worked perfectly for our budget, and students are excited about technology again.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400', // Professional Indian male
+    image: '/assest/swapna.jpg',
   },
   {
     type: 'student',
@@ -68,7 +68,7 @@ const testimonials = [
     role: '8th Class Student',
     text: 'I built my first robot and a mini website. I never thought coding could be this fun!',
     rating: 5,
-    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400', // Indian student
+    image: '/assest/codekids jr students classes.jpg',
   },
 ];
 
@@ -418,10 +418,12 @@ export default function CodeKidsJrPricingPage() {
             >
               <div className="relative h-[600px] rounded-3xl overflow-hidden">
                 <Image
-                  src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/assest/kids robotics.jpg"
                   alt="Kids learning coding and robotics"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={90}
                   unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
@@ -614,14 +616,14 @@ export default function CodeKidsJrPricingPage() {
               <Info className="h-5 w-5 text-[#00E0FF]" />
               <p className="text-sm font-semibold">Pricing is per student per month. Discounted launch pricing (50% OFF) valid for a limited period.</p>
             </div>
-            <Link
-              href="#contact-form"
-              onClick={(e) => handleAnchorClick(e, '#contact-form')}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-all duration-200 active:scale-95"
+            <a
+              href="/assest/codekids_jr brochure.pdf"
+              download
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-all duration-200 active:scale-95 min-h-[48px] touch-manipulation"
             >
               Download Full JR Brochure with Pricing
               <Download className="h-5 w-5" />
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
@@ -734,10 +736,12 @@ export default function CodeKidsJrPricingPage() {
             <motion.div {...fadeInRight}>
               <div className="relative h-[500px] rounded-3xl overflow-hidden">
                 <Image
-                  src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/assest/students learning.jpg"
                   alt="Kids in camp working on projects"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={90}
                   unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
