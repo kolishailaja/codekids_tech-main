@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for all anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optimize rendering performance */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Performance optimizations */
+img, video {
+  content-visibility: auto;
+}
+
+/* Optimize animations for performance */
+.animate-glow,
+.animate-pulse,
+.animate-spin {
+  will-change: opacity, transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Fast button/link interactions */
+button,
+a,
+[role="button"] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer base {
+  :root {
+    --ck-bg: #F8FAFF;
+    --ck-bg-soft: #EFF4FF;
+    --ck-white: #FFFFFF;
+    --ck-text-dark: #111827;
+    --ck-text-body: #374151;
+    --ck-text-muted: #6B7280;
+    --ck-pink: #FF4B8F;
+    --ck-purple: #7B3DFF;
+    --ck-blue: #2ED0FF;
+    --ck-border-soft: #E0E7FF;
+
+    --background: 248 100% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 338 100% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 100% 94%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 217 91% 60%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 262 100% 62%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 239 50% 91%;
+    --input: 239 50% 91%;
+    --ring: 338 100% 64%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --ck-bg: #0F1419;
+    --ck-bg-soft: #1A1F2E;
+    --ck-white: #1E2636;
+    --ck-text-dark: #F9FAFB;
+    --ck-text-body: #E5E7EB;
+    --ck-text-muted: #9CA3AF;
+    --ck-pink: #FF4B8F;
+    --ck-purple: #7B3DFF;
+    --ck-blue: #2ED0FF;
+    --ck-border-soft: #2D3748;
+
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 338 100% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 262 100% 62%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 338 100% 64%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body transition-colors duration-300;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+  .font-body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  .font-code {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+  }
+  .bg-ck-gradient-main {
+    background: linear-gradient(90deg, #FF4B8F 0%, #7B3DFF 50%, #2ED0FF 100%);
+  }
+  .bg-ck-hero {
+    background: radial-gradient(circle at top left, rgba(255, 75, 143, 0.15), transparent 55%),
+                radial-gradient(circle at bottom right, rgba(46, 208, 255, 0.15), transparent 55%);
+  }
+  .text-ck-gradient {
+    @apply bg-ck-gradient-main bg-clip-text text-transparent;
+  }
+  .glass-card {
+    @apply bg-white/70 dark:bg-white/5 backdrop-blur-md border border-[#E0E7FF] dark:border-white/10 rounded-2xl shadow-sm;
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 75, 143, 0.3), 0 0 40px rgba(123, 61, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 75, 143, 0.5), 0 0 60px rgba(123, 61, 255, 0.4);
+  }
+}
+
+@keyframes grid {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Performance: Use GPU acceleration for animations */
+[class*="animate-"],
+.motion-safe\:animate-* {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Optimize image loading */
+img {
+  content-visibility: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Reduce layout shifts */
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
